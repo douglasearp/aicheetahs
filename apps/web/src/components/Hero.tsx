@@ -16,8 +16,8 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-      {/* Fixed Logo Header */}
-      <div className="fixed left-0 right-0 top-0 z-50 px-4 py-3 sm:px-6 sm:py-6 lg:px-8">
+      {/* Scrolling Logo Header */}
+      <div className="absolute left-0 right-0 top-0 z-50 px-4 py-3 sm:px-6 sm:py-6 lg:px-8">
         <div className="container mx-auto flex items-center justify-between">
           <a href="/">
             <Image
@@ -56,8 +56,8 @@ export default function Hero() {
           className="object-cover object-[center_10%] opacity-95 sm:object-[center_15%] md:object-[center_20%]"
           quality={100}
         />
-        {/* Gradient overlay for text readability - keeps cheetah face visible on right */}
-        <div className="absolute inset-y-0 left-0 w-full bg-gradient-to-r from-slate-900/90 via-slate-900/60 to-transparent md:w-[55%] lg:w-[40%]" />
+        {/* Gradient overlay for text readability - stronger on left for mobile, keeps cheetah visible on right */}
+        <div className="absolute inset-y-0 left-0 w-[65%] bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-transparent sm:w-full sm:from-slate-900/90 sm:via-slate-900/60 md:w-[55%] lg:w-[40%]" />
         {/* Top gradient for header area - lighter to show cheetah */}
         <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/60 to-transparent sm:h-32" />
         {/* Bottom gradient for depth - lighter to show cheetah body */}
@@ -65,7 +65,7 @@ export default function Hero() {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 flex min-h-screen items-center pt-24 pb-20 sm:pt-28 md:pt-20">
+      <div className="relative z-10 flex min-h-screen flex-col justify-between pb-20 pt-32 sm:justify-center sm:pt-28 md:pt-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             {/* Main Content */}
@@ -82,9 +82,15 @@ export default function Hero() {
                 <p className="font-semibold">Innovative Solutions</p>
                 <p className="font-semibold">Rapid Deployment</p>
               </div>
+            </div>
+          </div>
+        </div>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
+        {/* CTA Buttons - positioned at bottom on mobile to be below AI medallion */}
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <div className="animate-fade-in">
+              <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 max-w-md">
                 <button
                   onClick={handleLearnMore}
                   onMouseEnter={() => setIsHovered(true)}
