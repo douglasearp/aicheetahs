@@ -46,22 +46,22 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Background Image with Overlay - Centered Cheetah */}
+      {/* Background Image with Overlay - Cheetah Face Always Visible */}
       <div className="absolute inset-0">
         <Image
           src="/hero-image-new.png"
           alt="AI Cheetahs Hero"
           fill
           priority
-          className="object-cover object-center opacity-95"
+          className="object-cover object-[center_30%] opacity-95 sm:object-[center_35%] md:object-center"
           quality={100}
         />
-        {/* Gradient overlay for text readability - responsive width */}
-        <div className="absolute inset-y-0 left-0 w-full bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-transparent md:w-[60%] lg:w-[45%]" />
-        {/* Top gradient for header area */}
-        <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/70 to-transparent sm:h-32" />
-        {/* Bottom gradient for depth */}
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black/80 to-transparent sm:h-48" />
+        {/* Gradient overlay for text readability - keeps cheetah face visible on right */}
+        <div className="absolute inset-y-0 left-0 w-full bg-gradient-to-r from-slate-900/90 via-slate-900/60 to-transparent md:w-[55%] lg:w-[40%]" />
+        {/* Top gradient for header area - lighter to show cheetah */}
+        <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/60 to-transparent sm:h-32" />
+        {/* Bottom gradient for depth - lighter to show cheetah body */}
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black/70 to-transparent sm:h-48" />
       </div>
 
       {/* Content Container */}
