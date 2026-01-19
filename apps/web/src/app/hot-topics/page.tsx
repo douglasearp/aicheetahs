@@ -113,7 +113,7 @@ export default function HotTopics() {
       <main className="pt-20 sm:pt-24">
         {/* Hero Section with Video Player */}
         <section className="bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-          <div className="container mx-auto max-w-6xl">
+          <div className="container mx-auto max-w-5xl">
             <h1 className="mb-6 text-3xl font-bold text-white sm:mb-8 sm:text-4xl md:text-5xl">
               🔥 Hot Topics
             </h1>
@@ -126,16 +126,18 @@ export default function HotTopics() {
               </p>
             </div>
 
-            {/* Video Player */}
-            <div className="relative overflow-hidden rounded-xl bg-black shadow-2xl">
-              <div className="aspect-video w-full">
-                <iframe
-                  src={`https://www.youtube.com/embed/${currentVideo.id}?autoplay=0`}
-                  title={currentVideo.title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="h-full w-full"
-                />
+            {/* Video Player - 80% size */}
+            <div className="mx-auto w-[80%]">
+              <div className="relative overflow-hidden rounded-xl bg-black shadow-2xl">
+                <div className="aspect-video w-full">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${currentVideo.id}?autoplay=0`}
+                    title={currentVideo.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="h-full w-full"
+                  />
+                </div>
               </div>
             </div>
 
