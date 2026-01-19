@@ -37,6 +37,12 @@ export default function Hero() {
               Home
             </a>
             <a
+              href="/services"
+              className="text-sm font-medium text-white transition-colors hover:text-cyan-400 sm:text-base"
+            >
+              Services
+            </a>
+            <a
               href="/hot-topics"
               className="text-sm font-medium text-white transition-colors hover:text-cyan-400 sm:text-base"
             >

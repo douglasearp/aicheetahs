@@ -1,0 +1,463 @@
+Please create a page called Services with a side Navigation
+The side Navigation will have the following blades that you can click on to see different content
+The first blade is called AI Development as the Section Tab Header
+
+Title of AI Development Blade is AI-Powered Development Platform
+
+Accelerated Development with Cursor AI & Claude AI, Google Gemini, Cursor Composer
+Our development workflow leverages the most advanced AI-powered development tools available today, dramatically increasing productivity while maintaining enterprise-grade code quality. Cursor AI with Model Context Protocol (MCP) serves as our intelligent IDE, providing context-aware code generation, multi-file editing capabilities, and seamless integration with databases, APIs, and development tools. This allows us to understand entire codebases at once, enabling intelligent refactoring and architectural improvements that would take traditional development teams weeks to accomplish. Combined with Claude AI's Composer and Task Management features, we orchestrate complex multi-step development workflows, automate repetitive tasks, generate comprehensive documentation, and maintain coding standards across large projects. This AI-augmented approach allows us to deliver production-ready applications 3-5x faster than traditional development methods while reducing bugs and technical debt through intelligent code analysis and automated testing workflows.
+
+Technology Stack: AI Value Propositions & Capabilities
+Frontend Technologies
+Next.js
+Type: React Framework for Production
+Core Capabilities:
+
+Server-side rendering (SSR) and static site generation (SSG)
+API routes for backend functionality
+Automatic code splitting and optimization
+Built-in image optimization
+File-based routing system
+Edge runtime support for global performance
+
+AI Value Proposition:
+Next.js enables AI-powered applications with exceptional performance through its hybrid rendering capabilities. Server-side rendering allows AI models to pre-process data before reaching the client, reducing latency for AI-driven recommendations and personalization. The framework's API routes can host AI endpoints for invoice processing, document analysis, and real-time predictions without separate backend infrastructure. Built-in optimization ensures AI-heavy dashboards and analytics interfaces load instantly, while edge runtime capabilities allow AI models to run closer to users globally for sub-100ms response times.
+
+React.js
+Type: JavaScript Library for Building User Interfaces
+Core Capabilities:
+
+Component-based architecture for reusable UI elements
+Virtual DOM for efficient rendering
+Declarative programming model
+Rich ecosystem of libraries and tools
+Hooks for state and side-effect management
+Strong TypeScript integration
+
+AI Value Proposition:
+React's component architecture perfectly suits AI-driven interfaces where different sections update independently based on model predictions. Real-time AI features like chatbots, sentiment analysis displays, and dynamic recommendations benefit from React's efficient re-rendering—only updating components affected by new AI predictions rather than entire pages. The ecosystem includes libraries specifically designed for AI visualization (charts, graphs, ML model outputs), while hooks enable seamless integration with AI APIs, managing complex state from multiple AI services simultaneously.
+
+Tailwind CSS
+Type: Utility-First CSS Framework
+Core Capabilities:
+
+Utility classes for rapid UI development
+Responsive design without custom CSS
+Dark mode support built-in
+Customizable design system
+Tiny production bundle sizes
+JIT (Just-In-Time) compiler for performance
+
+AI Value Proposition:
+Tailwind accelerates development of AI application interfaces by 3-5x through utility-first styling, crucial when iterating on AI-powered dashboards and data visualizations. AI applications often require rapid prototyping to test different data presentation approaches—Tailwind enables designers to modify layouts in real-time based on user feedback without touching CSS files. The framework's responsive utilities ensure AI-driven mobile apps and dashboards look perfect across devices, while dark mode support is essential for data-heavy AI analytics interfaces that users view for extended periods.
+
+ESLint
+Type: JavaScript Code Quality and Linting Tool
+Core Capabilities:
+
+Static code analysis for JavaScript/TypeScript
+Automatic error detection before runtime
+Code style enforcement
+Custom rule configuration
+Integration with IDEs and CI/CD pipelines
+Auto-fix capabilities for common issues
+
+AI Value Proposition:
+ESLint ensures AI-critical code maintains enterprise-grade quality by catching errors before they reach production—crucial in AI systems where bugs can lead to incorrect predictions or data processing errors. When building AI APIs that handle sensitive financial data or medical information, ESLint enforces security patterns and prevents common vulnerabilities. Integration with AI coding assistants like Cursor AI and Claude allows automated code review and suggestions, maintaining consistent coding standards across teams building complex AI systems while reducing technical debt.
+
+Backend Technologies
+Python
+Type: High-Level Programming Language
+Core Capabilities:
+
+Simple, readable syntax
+Extensive standard library
+Dynamic typing with optional type hints
+Cross-platform compatibility
+Massive ecosystem for data science and AI
+Strong community and documentation
+
+AI Value Proposition:
+Python is the industry standard for AI and machine learning development, offering unparalleled access to frameworks like TensorFlow, PyTorch, scikit-learn, and Hugging Face Transformers. Building AI systems in Python means leveraging thousands of pre-trained models, NLP libraries, computer vision tools, and data processing frameworks unavailable in other languages. Python's simplicity allows rapid prototyping of AI features—testing new models, adjusting algorithms, and iterating on data pipelines in hours rather than days. For enterprises deploying AI, Python's ecosystem includes production-grade tools for model serving (TensorFlow Serving), experiment tracking (MLflow), and feature engineering (Feast).
+
+FastAPI
+Type: Modern Python Web Framework
+Core Capabilities:
+
+Async/await support for high concurrency
+Automatic API documentation (OpenAPI/Swagger)
+Type hints for validation and serialization
+Dependency injection system
+WebSocket support
+Built-in security and authentication
+
+AI Value Proposition:
+FastAPI is purpose-built for AI and ML services, providing the fastest Python framework for serving AI models in production. Its async architecture handles thousands of simultaneous AI inference requests—critical for real-time applications like fraud detection, invoice processing, or customer sentiment analysis. Automatic API documentation means data science teams can instantly understand and integrate AI endpoints, while type validation prevents malformed data from reaching ML models. FastAPI's performance rivals Node.js and Go while maintaining Python's AI ecosystem access, making it ideal for microservices that combine database operations, AI predictions, and business logic in sub-100ms response times.
+
+.NET Core
+Type: Cross-Platform Application Framework
+Core Capabilities:
+
+High-performance runtime
+Cross-platform (Windows, Linux, macOS)
+Built-in dependency injection
+Comprehensive standard library
+Strong typing with C#
+Enterprise-grade security features
+
+AI Value Proposition:
+.NET Core excels at building enterprise AI systems requiring extreme performance and reliability, particularly for financial services and payment processing. The framework's ML.NET library enables training and deploying machine learning models entirely in C#, perfect for organizations with existing .NET investments who need AI capabilities for fraud detection, credit scoring, or transaction anomaly detection. .NET's performance advantages shine in high-throughput scenarios—processing millions of invoices with AI-powered data extraction or running real-time risk models on payment streams. Integration with Azure Cognitive Services allows enterprises to add speech recognition, computer vision, and NLP to .NET applications with minimal code.
+
+DevOps & Infrastructure
+Docker
+Type: Containerization Platform
+Core Capabilities:
+
+Application containerization
+Consistent environments across dev/staging/prod
+Microservices architecture support
+Resource isolation and efficiency
+Version control for infrastructure
+Multi-platform deployment
+
+AI Value Proposition:
+Docker solves AI deployment's biggest challenge: dependency management and reproducibility. AI models often require specific Python versions, CUDA drivers, and conflicting library versions—Docker containers package everything together, ensuring models that work on data scientists' laptops run identically in production. Containers enable rapid scaling of AI services: when invoice processing volume spikes, spin up 10 more containers automatically. Docker also facilitates A/B testing of AI models by running multiple model versions simultaneously and routing traffic based on performance metrics. For enterprises, Docker ensures AI systems remain portable across cloud providers (Azure, AWS, GCP), preventing vendor lock-in.
+
+Portainer
+Type: Container Management Platform
+Core Capabilities:
+
+Web-based Docker management UI
+Multi-container orchestration
+Role-based access control
+Container health monitoring
+Template deployment system
+Resource usage visualization
+
+AI Value Proposition:
+Portainer democratizes AI deployment by providing a visual interface for managing complex AI containerized systems, allowing non-DevOps team members to deploy and monitor AI services. When running multiple AI models (fraud detection, invoice processing, sentiment analysis), Portainer provides single-pane visibility into resource consumption—critical for optimizing GPU usage and compute costs. The platform's template system enables one-click deployment of complete AI stacks (model server + database + API gateway), reducing deployment time from hours to minutes. For AI consulting teams, Portainer allows rapid client environment setup and provides clients with self-service access to monitor their AI systems without requiring DevOps expertise.
+
+Database Technologies
+PostgreSQL
+Type: Advanced Relational Database
+Core Capabilities:
+
+ACID compliance for data integrity
+Advanced indexing (B-tree, GiST, GIN, BRIN)
+Full-text search capabilities
+JSON/JSONB support for flexible schemas
+Extensibility with custom functions
+Robust transaction management
+
+AI Value Proposition:
+PostgreSQL's pgvector extension transforms it into a powerful vector database for AI applications, storing embeddings from language models and enabling semantic search across millions of documents in milliseconds. For AI-powered invoice processing, PostgreSQL handles both structured transaction data and unstructured AI model outputs, maintaining referential integrity while supporting rapid querying of AI-generated insights. The database's JSON capabilities allow storing ML model predictions, confidence scores, and metadata without rigid schemas, essential when AI models evolve and output structures change. PostgreSQL's advanced indexing ensures sub-second queries even when joining transactional data with AI-generated classifications across billions of records.
+
+Supabase
+Type: Open-Source Firebase Alternative (PostgreSQL-based)
+Core Capabilities:
+
+Real-time database subscriptions
+Built-in authentication and authorization
+Auto-generated REST and GraphQL APIs
+Row-level security (RLS)
+Storage for files and media
+Edge functions for serverless compute
+
+AI Value Proposition:
+Supabase accelerates AI application development by eliminating backend boilerplate—auto-generated APIs mean AI frontends can immediately query predictions, user data, and model outputs without writing API code. Real-time subscriptions enable live AI dashboards where fraud alerts, invoice processing status, and customer sentiment updates appear instantly as models generate predictions. The platform's edge functions allow deploying lightweight AI models serverless (sentiment analysis, text classification) that execute closer to users globally. For AI startups, Supabase's authentication and row-level security mean implementing multi-tenant AI systems where customers only see their own AI predictions and data, reducing time-to-market from months to weeks.
+
+Authentication & Security
+Azure Entra (formerly Azure AD)
+Type: Enterprise Identity and Access Management
+Core Capabilities:
+
+Single sign-on (SSO) across applications
+Multi-factor authentication (MFA)
+Conditional access policies
+B2B and B2C identity management
+Integration with Microsoft 365
+OAuth 2.0 and OpenID Connect support
+
+AI Value Proposition:
+Azure Entra secures AI systems handling sensitive data by enforcing enterprise-grade authentication and conditional access—ensuring AI-powered financial applications only allow access from approved devices and locations. For AI consulting serving multiple Fortune 50 clients, Entra enables centralized identity management where client employees access AI dashboards using their corporate credentials without separate logins. The platform's conditional access can restrict AI model access based on risk scores: if anomalous behavior is detected, require additional authentication before allowing access to AI-generated financial insights. Integration with Microsoft's compliance tools ensures AI systems meet SOC 2, HIPAA, and GDPR requirements automatically.
+
+Auth0
+Type: Customer Identity and Access Management Platform
+Core Capabilities:
+
+Universal login for any application
+Social identity provider integration
+Passwordless authentication
+Fine-grained authorization
+Attack protection and bot detection
+Customizable login flows
+
+AI Value Proposition:
+Auth0 enables AI applications to offer frictionless, secure authentication experiences critical for customer-facing AI products. For AI-powered invoice processing platforms, Auth0's passwordless authentication allows finance teams to access AI dashboards via email magic links or biometrics, reducing friction while maintaining security. The platform's rules engine can integrate AI: using machine learning models to detect suspicious login patterns and automatically step up authentication when risk scores are high. For SaaS AI products serving thousands of customers, Auth0's multi-tenancy features ensure complete data isolation while the API allows AI systems to programmatically create accounts, assign permissions, and manage access based on usage patterns and predictions.
+
+AI/ML Platforms & Orchestration
+Azure AI Foundry
+Type: Enterprise AI Development Platform
+Core Capabilities:
+
+Unified AI model management and deployment
+Pre-built AI models and fine-tuning capabilities
+Integration with Azure OpenAI, Cognitive Services
+MLOps pipelines for production AI
+Responsible AI tooling and governance
+Multi-cloud and hybrid deployment support
+
+AI Value Proposition:
+Azure AI Foundry accelerates enterprise AI development by providing a complete platform for building, training, and deploying production-ready AI systems with enterprise governance built-in. For Fortune 50 clients requiring compliance with SOC 2, HIPAA, and industry regulations, AI Foundry provides audit trails, model versioning, and responsible AI guardrails automatically. The platform enables rapid experimentation with multiple AI models (GPT-4, Claude, Llama, Mistral) through a unified interface, allowing teams to compare performance and costs before committing. Integration with Azure services means AI models can securely access enterprise data in SQL Server, Cosmos DB, or data lakes without data leaving the corporate network. AI Foundry's MLOps capabilities automate model retraining, A/B testing, and gradual rollouts—critical for financial AI systems where model performance directly impacts revenue.
+
+LangGraph
+Type: Framework for Building Stateful AI Agents
+Core Capabilities:
+
+Graph-based workflow orchestration for AI agents
+Stateful multi-step AI reasoning
+Human-in-the-loop approvals and interventions
+Cyclic and conditional AI workflows
+Integration with LangChain ecosystem
+Persistent state management across sessions
+
+AI Value Proposition:
+LangGraph transforms simple AI models into sophisticated agents capable of multi-step reasoning and complex workflows essential for enterprise automation. For invoice processing, LangGraph orchestrates workflows where AI extracts data, validates against business rules, routes for approval when confidence is low, and automatically processes when confidence is high—reducing manual review by 80% while maintaining accuracy. The framework's state management allows AI agents to handle interruptions: if a payment approval process is paused, LangGraph maintains context so the agent resumes exactly where it left off. For AI consulting projects, LangGraph enables building custom AI workflows (document analysis → data extraction → validation → database update → notification) that adapt based on results, handle errors gracefully, and provide full audit trails for regulated industries.
+
+Google AI Studio
+Type: Rapid AI Prototyping and API Platform
+Core Capabilities:
+
+Browser-based interface for testing Google's AI models (Gemini, PaLM 2)
+Prompt engineering and optimization tools
+Multimodal capabilities (text, image, video, audio)
+API key generation and usage monitoring
+Model comparison and benchmarking
+Integration with Google Cloud Vertex AI
+
+AI Value Proposition:
+Google AI Studio accelerates AI development by providing instant access to state-of-the-art multimodal models without infrastructure setup. For enterprises exploring AI capabilities, the browser-based interface allows business stakeholders to test Gemini models on actual company data (documents, images, videos) and validate ROI before committing to implementation—reducing project risk and securing buy-in. The platform's multimodal strengths excel in use cases like processing scanned invoices with both text extraction and image quality verification, analyzing product photos for defects, or transcribing and analyzing customer service call recordings. Google AI Studio's seamless upgrade path to Vertex AI means prototypes built in minutes transition to enterprise production environments with minimal code changes, maintaining the same API while adding enterprise features like VPC networking, compliance certifications, and SLA guarantees.
+
+Banana (now nano banana)
+Type: Serverless GPU Infrastructure for ML Models
+Core Capabilities:
+
+Serverless deployment of custom ML models
+Automatic scaling from zero to thousands of GPUs
+Sub-second cold start times
+Pay-per-millisecond pricing
+Support for PyTorch, TensorFlow, ONNX models
+API-based model serving
+
+AI Value Proposition:
+Banana solves the ML infrastructure challenge for AI applications with unpredictable traffic patterns, providing enterprise-grade GPU compute that scales to zero when unused—critical for cost management. For AI consulting delivering custom models (document classification, image analysis, speech recognition) to multiple clients, Banana eliminates the "always-on GPU" costs: clients only pay when their models are actively processing requests, reducing monthly costs from thousands to hundreds. The platform's sub-second cold starts mean occasional-use AI features (monthly report generation, quarterly compliance scans) maintain real-time performance without keeping expensive GPUs idle 99% of the time. Banana enables rapid deployment of custom models: data scientists push Docker containers with their trained models, and within minutes those models are production-ready with auto-scaling, monitoring, and global edge deployment—no DevOps expertise required.
+
+Imagen (Google)
+Type: Text-to-Image AI Model
+Core Capabilities:
+
+High-quality image generation from text descriptions
+Image editing and inpainting capabilities
+Style transfer and image-to-image translation
+Fine-tuning on custom datasets
+Integration with Google Cloud Vertex AI
+Commercial usage rights for generated images
+
+AI Value Proposition:
+Imagen enables enterprises to automate visual content creation at scale, particularly valuable for e-commerce, marketing, and product development. For retail companies processing thousands of products, Imagen generates lifestyle images, multiple angle views, and seasonal variations from product descriptions and reference photos—reducing photography costs by 70% while accelerating time-to-market. The model's inpainting capabilities allow automated product customization: generating images of furniture in different colors, showing clothing on diverse body types, or visualizing products in various room settings without physical samples or photo shoots. For AI consulting projects serving marketing teams, Imagen integrates with existing workflows to generate campaign visuals, social media content, and A/B testing variants on-demand. The commercial usage rights and Google Cloud integration mean enterprises can deploy Imagen-powered features knowing intellectual property is protected and infrastructure meets enterprise security/compliance requirements.
+
+Vector Databases & Embedding Storage
+ChromaDB
+Type: Open-Source Embedding Database
+Core Capabilities:
+
+High-performance vector similarity search
+Built-in embedding generation
+Metadata filtering and hybrid search
+Python-native with minimal dependencies
+In-memory and persistent storage modes
+Collections for multi-tenant isolation
+
+AI Value Proposition:
+ChromaDB excels at rapid prototyping of AI applications requiring semantic search, making it ideal for proof-of-concept projects and startups. Building a document Q&A system or customer support chatbot becomes trivial: upload PDFs, ChromaDB generates embeddings automatically, and semantic queries return relevant content in milliseconds. For AI consulting demos, ChromaDB's simplicity (install with pip, 5 lines of code to start) allows showcasing AI capabilities to clients in hours rather than weeks. The database's metadata filtering enables sophisticated queries like "find contracts similar to this one, but only from 2023-2024, for clients in financial services"—combining semantic understanding with traditional database filtering. ChromaDB's lightweight architecture means it runs on laptops for development and scales to millions of embeddings in production without infrastructure complexity.
+
+Qdrant
+Type: High-Performance Vector Search Engine
+Core Capabilities:
+
+Billion-scale vector search with millisecond latency
+Advanced filtering with payload indexing
+Distributed deployment and horizontal scaling
+Quantization for reduced memory usage
+REST and gRPC APIs
+Real-time updates and deletes
+
+AI Value Proposition:
+Qdrant delivers enterprise-grade vector search performance for production AI systems handling millions of users and billions of embeddings. For customer support AI handling 100,000+ daily queries, Qdrant's sub-10ms search latency ensures chatbots respond instantly even when searching across every support ticket, product manual, and knowledge base article ever created. The platform's payload filtering allows complex queries combining semantic search with business logic: "find similar customer complaints, but only from enterprise clients, in the last 30 days, with sentiment scores below 0.3"—executing in milliseconds across terabytes of data. Qdrant's quantization reduces memory costs by 4-8x without sacrificing accuracy, critical for AI startups managing cloud costs. For multi-tenant SaaS AI platforms, Qdrant's collection-based isolation ensures complete data separation while sharing infrastructure, reducing per-customer costs while maintaining security.
+
+Local AI Models & Inference
+Mistral
+Type: High-Performance Open-Source Language Models
+Core Capabilities:
+
+Family of efficient LLMs (7B, 8x7B, 8x22B parameters)
+Mixture-of-Experts architecture for efficiency
+Commercial-friendly Apache 2.0 license
+Multilingual capabilities (English, French, German, Spanish, Italian)
+Function calling and JSON mode
+Runs on consumer GPUs
+
+AI Value Proposition:
+Mistral models provide enterprise-quality AI capabilities with complete data privacy and zero per-token costs—critical for financial services and healthcare handling sensitive data that cannot leave corporate networks. The 7B model runs on a single GPU while matching GPT-3.5 performance, enabling real-time invoice processing, contract analysis, and customer support without cloud dependencies or latency. For AI consulting clients concerned about OpenAI/Anthropic costs, Mistral's one-time infrastructure investment replaces perpetual API fees: processing 10 million invoices costs $0 after initial setup versus $50,000+ with cloud APIs. The Mixture-of-Experts architecture activates only relevant model portions per query, achieving 5-10x better cost-performance than dense models. Mistral's multilingual capabilities enable global enterprises to deploy one AI system handling documents in 5+ languages without separate models per region.
+
+Ollama
+Type: Local LLM Runtime and Management Platform
+Core Capabilities:
+
+One-command LLM installation and management
+Support for 50+ open-source models (Llama, Mistral, CodeLlama, etc.)
+OpenAI-compatible API for drop-in replacement
+GPU acceleration with automatic optimization
+Model quantization for reduced memory
+REST API for application integration
+
+AI Value Proposition:
+Ollama democratizes AI development by making local LLM deployment as simple as "ollama run llama3"—eliminating cloud dependencies, API costs, and data privacy concerns. For enterprise clients requiring air-gapped AI systems (defense, banking, healthcare), Ollama enables complete on-premise deployment where sensitive data never leaves the corporate network. Development teams can prototype AI features locally without API costs: test 10 different models, iterate rapidly, and only deploy to cloud once requirements are finalized, reducing development costs by 10x. Ollama's OpenAI-compatible API means applications built for GPT-4 can switch to local Llama 3 with a single configuration change, providing vendor independence and cost predictability. For AI consulting, Ollama enables delivering turnkey solutions where clients receive working AI systems that operate indefinitely without ongoing costs or external dependencies.
+
+Open WebUI
+Type: Self-Hosted AI Interface Platform
+Core Capabilities:
+
+ChatGPT-like interface for local and cloud LLMs
+Support for multiple AI providers (OpenAI, Anthropic, Ollama, etc.)
+Document upload and RAG (Retrieval-Augmented Generation)
+User management and access control
+Conversation history and sharing
+API for custom integrations
+
+AI Value Proposition:
+Open WebUI transforms local AI models into enterprise-ready applications with professional interfaces, user management, and document processing—essential for deploying AI to non-technical business users. For companies wanting ChatGPT functionality but with data privacy, Open WebUI provides an identical experience while keeping conversations and documents on corporate servers. The platform's RAG capabilities enable instant "ChatGPT for your company docs": upload policy manuals, contracts, and procedures, and employees query them conversationally without exposing confidential information to external AI providers. For AI consulting delivering custom solutions, Open WebUI provides client-ready interfaces in hours: no frontend development needed, yet clients get branded AI assistants with their logo, custom prompts, and integration with internal knowledge bases. Multi-user support enables departmental AI deployments where finance, legal, and operations each have AI assistants trained on their specific documents and workflows.
+
+Quick Reference Matrix
+Technology Primary UseAI SuperpowerBest ForNext.jsFrontend FrameworkEdge AI, SSR for MLFast AI dashboards, global deployment - These are the header record for this table
+React.js UI LibraryReactive AI interfacesReal-time AI updates, component reuse
+Tailwind CSS StylingRapid AI UI iterationData-heavy dashboards, prototypes
+ESLint Code QualityPrevent AI system bugsMission-critical AI apps
+Python Backend LanguageML ecosystem accessModel training, data science
+FastAPI API FrameworkHigh-concurrency AI servingReal-time ML inference APIs
+.NET Core Enterprise FrameworkHigh-performance AIFinancial AI, payment processing
+Docker ContainerizationML reproducibilityModel deployment, scaling
+Portainer Container ManagementAI stack visibilityMulti-model orchestration
+PostgreSQL Relational DatabaseVector search, hybrid dataAI + transactional workloads
+Supabase Backend-as-a-ServiceInstant AI APIsRapid AI prototyping, startups
+Azure Entra Enterprise AuthEnterprise AI securityFortune 50 AI deployments
+Auth0 Customer AuthFrictionless AI accessSaaS AI products
+Azure AI Foundry AI PlatformEnterprise MLOps, governanceRegulated industry AI, Fortune 50
+Google AI Studio AI PrototypingMultimodal rapid testingGemini model evaluation, stakeholder demos
+LangGraph AI Agent FrameworkStateful multi-step workflowsComplex business automation
+Banana Serverless GPUZero-scaling ML infrastructureVariable-traffic AI, cost optimization
+ImagenText-to-Image AI Automated visual contentE-commerce, marketing, product visualization
+ChromaDB Vector Database Rapid AI prototypingPOCs, startups, demos
+Qdrant Vector Search EngineBillion-scale performanceEnterprise semantic search
+Mistral Open LLMPrivate AI, zero per-token costSensitive data, high-volume processing
+Ollama Local LLM RuntimeOn-premise deploymentAir-gapped systems, dev environments
+Open Web UI AI InterfaceUser-friendly local AIInternal company AI assistants
+
+Technology Stack Combinations for Common AI Use Cases
+AI-Powered Invoice Processing Platform
+
+Frontend: Next.js + React + Tailwind CSS (fast, responsive dashboard)
+Backend: FastAPI (async invoice processing) + Python (OCR/NLP models)
+AI Platform: Azure AI Foundry (model management) + LangGraph (workflow orchestration)
+Database: PostgreSQL (transactions) + Qdrant (semantic search for similar invoices)
+Auth: Azure Entra (enterprise clients)
+Deploy: Docker + Portainer (scale during month-end rushes)
+
+Real-Time Fraud Detection System
+
+Frontend: React + Tailwind CSS (live fraud alerts)
+Backend: .NET Core (high-throughput transactions) + FastAPI (ML inference)
+AI Models: Mistral (on-premise fraud detection) + Azure AI Foundry (model monitoring)
+Database: PostgreSQL (transactional data) + Supabase (real-time subscriptions)
+Auth: Auth0 (customer access) + Azure Entra (internal analysts)
+Deploy: Docker (isolated model environments)
+
+Customer Sentiment Analysis Dashboard
+
+Frontend: Next.js + React + Tailwind CSS (real-time sentiment display)
+Backend: Python + FastAPI (NLP processing)
+AI: LangGraph (multi-step analysis) + ChromaDB (conversation history search)
+Database: Supabase (real-time updates + file storage)
+Auth: Auth0 (social login for customers)
+Deploy: Docker + Portainer (multi-tenant model hosting)
+
+Enterprise Data Analytics Platform
+
+Frontend: Next.js + React + Tailwind CSS + ESLint (enterprise quality)
+Backend: .NET Core (ETL pipelines) + FastAPI (AI predictions)
+AI Platform: Azure AI Foundry (governance) + LangGraph (automated insights)
+Database: PostgreSQL (data warehouse) + Qdrant (semantic data exploration)
+Auth: Azure Entra (SSO across enterprise)
+Deploy: Docker (consistent environments across dev/prod)
+
+On-Premise AI Assistant (Air-Gapped)
+
+Frontend: Open WebUI (ChatGPT-like interface)
+Backend: Ollama (local model runtime)
+AI Models: Mistral 7B (general chat) + CodeLlama (code assistance)
+Vector DB: ChromaDB (document RAG)
+Database: PostgreSQL (user conversations + metadata)
+Auth: Azure Entra (corporate SSO)
+Deploy: Docker + Portainer (isolated deployment)
+
+Multi-Tenant SaaS AI Platform
+
+Frontend: Next.js + React + Tailwind CSS
+Backend: FastAPI (multi-tenant API) + LangGraph (customer workflows)
+AI: Azure AI Foundry (multiple model options) + Mistral (cost-efficient processing)
+Vector DB: Qdrant (isolated collections per tenant)
+Database: Supabase (tenant isolation) + PostgreSQL (analytics)
+Auth: Auth0 (customer authentication)
+Deploy: Docker + Portainer (per-tenant scaling)
+
+Document Intelligence System
+
+Frontend: Next.js + React + Tailwind CSS
+Backend: Python + FastAPI (document processing)
+AI: LangGraph (extraction workflow) + Azure AI Foundry (OCR models)
+Vector DB: Qdrant (semantic document search across millions of pages)
+Database: PostgreSQL (structured data) + Supabase (file storage)
+Auth: Azure Entra (enterprise) or Auth0 (SaaS)
+Deploy: Docker + Portainer
+
+Cost-Optimized AI Development Environment
+
+Frontend: Open WebUI (rapid prototyping interface)
+Backend: Ollama (local models, zero API costs)
+AI Models: Mistral + Llama 3 + CodeLlama (all local)
+Vector DB: ChromaDB (lightweight, embedded)
+Database: PostgreSQL (local instance)
+Auth: Basic auth (development only)
+Deploy: Docker Compose (single-command setup)
+
+E-Commerce Visual Content Platform
+
+Frontend: Next.js + React + Tailwind CSS
+Backend: FastAPI (image processing) + Python
+AI Models: Imagen (product visualization) + Google AI Studio (multimodal testing)
+Infrastructure: Banana (serverless GPU for image generation)
+Vector DB: Qdrant (visual similarity search)
+Database: Supabase (product catalog) + PostgreSQL (metadata)
+Auth: Auth0 (customer accounts)
+Deploy: Docker + Portainer
+
+Multimodal AI Analysis Platform
+
+Frontend: Next.js + React + Tailwind CSS
+Backend: FastAPI (orchestration) + LangGraph (workflows)
+AI: Google AI Studio (Gemini multimodal) + Azure AI Foundry (model governance)
+Infrastructure: Banana (on-demand GPU scaling)
+Vector DB: Qdrant (cross-modal search)
+Database: PostgreSQL + Supabase (file storage)
+Auth: Azure Entra (enterprise SSO)
+Deploy: Docker + Portainer

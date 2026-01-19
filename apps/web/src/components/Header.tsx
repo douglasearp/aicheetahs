@@ -31,6 +31,16 @@ export default function Header() {
             Home
           </a>
           <a
+            href="/services"
+            className={`text-sm font-medium transition-colors sm:text-base ${
+              pathname === '/services'
+                ? 'text-cyan-400'
+                : 'text-gray-300 hover:text-cyan-400'
+            }`}
+          >
+            Services
+          </a>
+          <a
             href="/hot-topics"
             className={`text-sm font-medium transition-colors sm:text-base ${
               pathname === '/hot-topics'
