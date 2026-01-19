@@ -46,14 +46,14 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Background Image with Overlay - Cheetah Full Head Always Visible */}
+      {/* Background Image with Overlay - Cheetah Full Head with Space Above Ears */}
       <div className="absolute inset-0">
         <Image
           src="/hero-image-new.png"
           alt="AI Cheetahs Hero"
           fill
           priority
-          className="object-cover object-[center_20%] opacity-95 sm:object-[center_25%] md:object-[center_30%]"
+          className="object-cover object-[center_10%] opacity-95 sm:object-[center_15%] md:object-[center_20%]"
           quality={100}
         />
         {/* Gradient overlay for text readability - keeps cheetah face visible on right */}
