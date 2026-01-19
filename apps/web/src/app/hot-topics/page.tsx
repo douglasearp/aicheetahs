@@ -238,12 +238,18 @@ const videos: Video[] = [
 export default function HotTopics() {
   const [currentVideo, setCurrentVideo] = useState(videos[0]);
   const [isHovering, setIsHovering] = useState<string | null>(null);
+  const [searchQuery, setSearchQuery] = useState('');
 
   const handleVideoSelect = (video: Video) => {
     setCurrentVideo(video);
     // Scroll to top to see the player
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  // Filter videos based on search query
+  const filteredVideos = videos.filter((video) =>
+    video.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
     <div className="min-h-screen bg-slate-950">
@@ -314,8 +320,73 @@ export default function HotTopics() {
               Featured Videos
             </h2>
             
-            <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
-              {videos.map((video) => (
+            {/* Search Bar */}
+            <div className="mb-6">
+              <div className="relative">
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Search videos by title..."
+                  className="w-full rounded-lg bg-slate-900 border border-slate-800 px-4 py-3 pl-12 text-white placeholder-gray-500 transition-all focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/50"
+                />
+                <svg
+                  className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+                {searchQuery && (
+                  <button
+                    onClick={() => setSearchQuery('')}
+                    className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 transition-colors hover:text-white"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                )}
+              </div>
+              {searchQuery && (
+                <p className="mt-2 text-sm text-gray-400">
+                  Found {filteredVideos.length} video{filteredVideos.length !== 1 ? 's' : ''} matching "{searchQuery}"
+                </p>
+              )}
+            </div>
+            
+            {filteredVideos.length === 0 ? (
+              <div className="py-16 text-center">
+                <svg
+                  className="mx-auto mb-4 h-16 w-16 text-gray-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <p className="text-xl text-gray-400">No videos found</p>
+                <p className="mt-2 text-sm text-gray-500">Try a different search term</p>
+              </div>
+            ) : (
+              <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
+                {filteredVideos.map((video) => (
                 <button
                   key={video.id}
                   onClick={() => handleVideoSelect(video)}
@@ -372,7 +443,8 @@ export default function HotTopics() {
                   </div>
                 </button>
               ))}
-            </div>
+              </div>
+            )}
           </div>
         </section>
 
