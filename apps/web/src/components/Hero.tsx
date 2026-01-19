@@ -42,6 +42,12 @@ export default function Hero() {
             >
               Hot Topics 🔥
             </a>
+            <a
+              href="/contact"
+              className="text-sm font-medium text-white transition-colors hover:text-cyan-400 sm:text-base"
+            >
+              Contact
+            </a>
           </nav>
         </div>
       </div>

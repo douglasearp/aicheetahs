@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
+import Header from '@/components/Header';
 
 interface Video {
   id: string;
@@ -247,38 +247,11 @@ export default function HotTopics() {
 
   return (
     <div className="min-h-screen bg-slate-950">
-      {/* Fixed Header with Logo */}
-      <header className="fixed left-0 right-0 top-0 z-50 bg-slate-950/95 backdrop-blur-sm px-4 py-3 shadow-lg sm:px-6 sm:py-4 lg:px-8">
-        <div className="container mx-auto flex items-center justify-between">
-          <a href="/" className="flex items-center">
-            <Image
-              src="/ai-cheetahs-logo-final.png"
-              alt="AI Cheetahs"
-              width={300}
-              height={80}
-              priority
-              className="h-auto w-40 drop-shadow-lg sm:w-56 md:w-64"
-            />
-          </a>
-          <nav className="flex gap-4 sm:gap-6">
-            <a
-              href="/"
-              className="text-sm font-medium text-gray-300 transition-colors hover:text-cyan-400 sm:text-base"
-            >
-              Home
-            </a>
-            <a
-              href="/hot-topics"
-              className="text-sm font-medium text-cyan-400 sm:text-base"
-            >
-              Hot Topics
-            </a>
-          </nav>
-        </div>
-      </header>
+      {/* Header */}
+      <Header />
 
       {/* Main Content */}
-      <main className="pt-20 sm:pt-24">
+      <main className="pt-24 sm:pt-28 md:pt-32">
         {/* Hero Section with Video Player */}
         <section className="bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
           <div className="container mx-auto max-w-5xl">
