@@ -24,6 +24,12 @@ const videos: Video[] = [
     thumbnail: 'https://img.youtube.com/vi/Bwqy0lsEaEg/mqdefault.jpg',
   },
   {
+    id: 'bFC1QGEQ2E8',
+    title: 'Claude Skills',
+    url: 'https://www.youtube.com/watch?v=bFC1QGEQ2E8',
+    thumbnail: 'https://img.youtube.com/vi/bFC1QGEQ2E8/mqdefault.jpg',
+  },
+  {
     id: 'sPmat30SE4k',
     title: 'Vercel',
     url: 'https://www.youtube.com/watch?v=sPmat30SE4k',
@@ -36,10 +42,22 @@ const videos: Video[] = [
     thumbnail: 'https://img.youtube.com/vi/Efol-gHLn7w/mqdefault.jpg',
   },
   {
+    id: 'WInPBmCK3l4',
+    title: 'Cursor Plan Mode',
+    url: 'https://www.youtube.com/watch?v=WInPBmCK3l4',
+    thumbnail: 'https://img.youtube.com/vi/WInPBmCK3l4/mqdefault.jpg',
+  },
+  {
     id: 'oAoigBWLZgE',
     title: 'Cursor MCP',
     url: 'https://www.youtube.com/watch?v=oAoigBWLZgE',
     thumbnail: 'https://img.youtube.com/vi/oAoigBWLZgE/mqdefault.jpg',
+  },
+  {
+    id: 'ItPcGiStRYA',
+    title: 'Eraser AI',
+    url: 'https://www.youtube.com/watch?v=ItPcGiStRYA',
+    thumbnail: 'https://img.youtube.com/vi/ItPcGiStRYA/mqdefault.jpg',
   },
   {
     id: '5Pm5aTC13qI',
@@ -49,21 +67,93 @@ const videos: Video[] = [
   },
   {
     id: 'lMqukH2oT7o',
-    title: 'Aurta.Build',
+    title: 'Aura.Build',
     url: 'https://www.youtube.com/watch?v=lMqukH2oT7o&t=40s',
     thumbnail: 'https://img.youtube.com/vi/lMqukH2oT7o/mqdefault.jpg',
   },
   {
-    id: 'r6qGt6Uu3eE',
+    id: 'YLtlz88zrLg',
+    title: 'Github Actions',
+    url: 'https://www.youtube.com/watch?v=YLtlz88zrLg',
+    thumbnail: 'https://img.youtube.com/vi/YLtlz88zrLg/mqdefault.jpg',
+  },
+  {
+    id: 'RgZyX-e6W9E',
     title: 'Github Container Registry',
-    url: 'https://www.youtube.com/watch?v=r6qGt6Uu3eE',
-    thumbnail: 'https://img.youtube.com/vi/r6qGt6Uu3eE/mqdefault.jpg',
+    url: 'https://www.youtube.com/watch?v=RgZyX-e6W9E&t=100s',
+    thumbnail: 'https://img.youtube.com/vi/RgZyX-e6W9E/mqdefault.jpg',
   },
   {
     id: 'xQKtDgJXrlM',
     title: 'Capacitor iOS / Android',
     url: 'https://www.youtube.com/watch?v=xQKtDgJXrlM&t=81s',
     thumbnail: 'https://img.youtube.com/vi/xQKtDgJXrlM/mqdefault.jpg',
+  },
+  {
+    id: 'm1-bc53EGh8',
+    title: 'Expo iOS / Android',
+    url: 'https://www.youtube.com/watch?v=m1-bc53EGh8',
+    thumbnail: 'https://img.youtube.com/vi/m1-bc53EGh8/mqdefault.jpg',
+  },
+  {
+    id: 'eGz9DS-aIeY',
+    title: 'Linode Hosting',
+    url: 'https://www.youtube.com/watch?v=eGz9DS-aIeY&t=420s',
+    thumbnail: 'https://img.youtube.com/vi/eGz9DS-aIeY/mqdefault.jpg',
+  },
+  {
+    id: 'AfxyA2O8JqM',
+    title: 'Hostinger Hosting',
+    url: 'https://www.youtube.com/watch?v=AfxyA2O8JqM&t=147s',
+    thumbnail: 'https://img.youtube.com/vi/AfxyA2O8JqM/mqdefault.jpg',
+  },
+  {
+    id: '0P53S34zm44',
+    title: 'Netlify Hosting',
+    url: 'https://www.youtube.com/watch?v=0P53S34zm44',
+    thumbnail: 'https://img.youtube.com/vi/0P53S34zm44/mqdefault.jpg',
+  },
+  {
+    id: 'fgbEwVWlpsI',
+    title: 'Stripe Payments',
+    url: 'https://www.youtube.com/watch?v=fgbEwVWlpsI',
+    thumbnail: 'https://img.youtube.com/vi/fgbEwVWlpsI/mqdefault.jpg',
+  },
+  {
+    id: 'kyphLGnSz6Q',
+    title: 'Supabase Postgres',
+    url: 'https://www.youtube.com/watch?v=kyphLGnSz6Q&t=905s',
+    thumbnail: 'https://img.youtube.com/vi/kyphLGnSz6Q/mqdefault.jpg',
+  },
+  {
+    id: 'gosd4iRZNdU',
+    title: 'Google AI Studio',
+    url: 'https://www.youtube.com/watch?v=gosd4iRZNdU',
+    thumbnail: 'https://img.youtube.com/vi/gosd4iRZNdU/mqdefault.jpg',
+  },
+  {
+    id: '4BwyqmRTrx8',
+    title: 'Azure App Service Web App',
+    url: 'https://www.youtube.com/watch?v=4BwyqmRTrx8&t=588s',
+    thumbnail: 'https://img.youtube.com/vi/4BwyqmRTrx8/mqdefault.jpg',
+  },
+  {
+    id: 'DJvM2lSPn6w',
+    title: 'Next JS Auth',
+    url: 'https://www.youtube.com/watch?v=DJvM2lSPn6w',
+    thumbnail: 'https://img.youtube.com/vi/DJvM2lSPn6w/mqdefault.jpg',
+  },
+  {
+    id: 'yufqeJLP1rI',
+    title: 'Auth0',
+    url: 'https://www.youtube.com/watch?v=yufqeJLP1rI',
+    thumbnail: 'https://img.youtube.com/vi/yufqeJLP1rI/mqdefault.jpg',
+  },
+  {
+    id: 'RebA5J-rlwg',
+    title: 'Prisma ORM',
+    url: 'https://www.youtube.com/watch?v=RebA5J-rlwg',
+    thumbnail: 'https://img.youtube.com/vi/RebA5J-rlwg/mqdefault.jpg',
   },
 ];
 
