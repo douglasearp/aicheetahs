@@ -155,6 +155,84 @@ const videos: Video[] = [
     url: 'https://www.youtube.com/watch?v=RebA5J-rlwg',
     thumbnail: 'https://img.youtube.com/vi/RebA5J-rlwg/mqdefault.jpg',
   },
+  {
+    id: '8nzt_xzsyq8',
+    title: 'Notebook LM',
+    url: 'https://www.youtube.com/watch?v=8nzt_xzsyq8&t=678s',
+    thumbnail: 'https://img.youtube.com/vi/8nzt_xzsyq8/mqdefault.jpg',
+  },
+  {
+    id: 'Sq8Cq7RZM2o',
+    title: 'Azure Foundry',
+    url: 'https://www.youtube.com/watch?v=Sq8Cq7RZM2o',
+    thumbnail: 'https://img.youtube.com/vi/Sq8Cq7RZM2o/mqdefault.jpg',
+  },
+  {
+    id: 'qAF1NjEVHhY',
+    title: 'LangChain / LangGraph',
+    url: 'https://www.youtube.com/watch?v=qAF1NjEVHhY',
+    thumbnail: 'https://img.youtube.com/vi/qAF1NjEVHhY/mqdefault.jpg',
+  },
+  {
+    id: 'QSW2L8dkaZk',
+    title: 'ChromaDB Vector DB',
+    url: 'https://www.youtube.com/watch?v=QSW2L8dkaZk',
+    thumbnail: 'https://img.youtube.com/vi/QSW2L8dkaZk/mqdefault.jpg',
+  },
+  {
+    id: 'mXNrhyw4q84',
+    title: 'Qdrant Vector DB',
+    url: 'https://www.youtube.com/watch?v=mXNrhyw4q84',
+    thumbnail: 'https://img.youtube.com/vi/mXNrhyw4q84/mqdefault.jpg',
+  },
+  {
+    id: 'WBPFjYLIhsA',
+    title: 'SQL Server Vector DB',
+    url: 'https://www.youtube.com/watch?v=WBPFjYLIhsA',
+    thumbnail: 'https://img.youtube.com/vi/WBPFjYLIhsA/mqdefault.jpg',
+  },
+  {
+    id: '5RIOQuHOihY',
+    title: 'Ollama LLM Orchestrator',
+    url: 'https://www.youtube.com/watch?v=5RIOQuHOihY',
+    thumbnail: 'https://img.youtube.com/vi/5RIOQuHOihY/mqdefault.jpg',
+  },
+  {
+    id: 'LmXaPUky_u4',
+    title: 'Open Web GUI LLM Orchestrator',
+    url: 'https://www.youtube.com/watch?v=LmXaPUky_u4',
+    thumbnail: 'https://img.youtube.com/vi/LmXaPUky_u4/mqdefault.jpg',
+  },
+  {
+    id: 'DjiUiOoQBPo',
+    title: 'Bolt New AI Web UI Builder',
+    url: 'https://www.youtube.com/watch?v=DjiUiOoQBPo&t=1258s',
+    thumbnail: 'https://img.youtube.com/vi/DjiUiOoQBPo/mqdefault.jpg',
+  },
+  {
+    id: 'TAXRZyGV1Dw',
+    title: 'Replit AI Web UI Builder',
+    url: 'https://www.youtube.com/watch?v=TAXRZyGV1Dw',
+    thumbnail: 'https://img.youtube.com/vi/TAXRZyGV1Dw/mqdefault.jpg',
+  },
+  {
+    id: '4yhd2cj8Ob8',
+    title: 'Base 44 AI Web UI Builder',
+    url: 'https://www.youtube.com/watch?v=4yhd2cj8Ob8',
+    thumbnail: 'https://img.youtube.com/vi/4yhd2cj8Ob8/mqdefault.jpg',
+  },
+  {
+    id: 'rqvtLxwMklo',
+    title: 'Lovable AI Web UI Builder',
+    url: 'https://www.youtube.com/watch?v=rqvtLxwMklo',
+    thumbnail: 'https://img.youtube.com/vi/rqvtLxwMklo/mqdefault.jpg',
+  },
+  {
+    id: 'v4DSSHPFtXQ',
+    title: 'Lovart AI Web UI Builder',
+    url: 'https://www.youtube.com/watch?v=v4DSSHPFtXQ',
+    thumbnail: 'https://img.youtube.com/vi/v4DSSHPFtXQ/mqdefault.jpg',
+  },
 ];
 
 export default function HotTopics() {
