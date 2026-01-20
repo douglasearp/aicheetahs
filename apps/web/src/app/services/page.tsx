@@ -13,6 +13,7 @@ const sections = [
   { id: 'ai-platforms', label: 'AI/ML Platforms' },
   { id: 'vector-db', label: 'Vector Databases' },
   { id: 'local-ai', label: 'Local AI Models' },
+  { id: 'architecture', label: 'Architecture & Design' },
   { id: 'reference', label: 'Quick Reference Matrix' },
   { id: 'use-cases', label: 'Technology Stack Combinations' },
 ];
@@ -82,6 +83,8 @@ export default function Services() {
     { name: 'Mistral', section: 'Local AI Models', id: 'local-ai' },
     { name: 'Ollama', section: 'Local AI Models', id: 'local-ai' },
     { name: 'Open WebUI', section: 'Local AI Models', id: 'local-ai' },
+    // Architecture
+    { name: 'Eraser AI', section: 'Architecture & Design', id: 'architecture' },
   ];
 
   const handleSearch = (query: string) => {
@@ -773,6 +776,38 @@ export default function Services() {
                 </div>
               </section>
 
+              {/* Architecture & Design */}
+              <section id="architecture" className="scroll-mt-32">
+                <div className="rounded-lg bg-slate-900 border border-slate-800 p-6 sm:p-8">
+                  <h2 className="mb-6 text-2xl font-bold text-cyan-400 sm:text-3xl">
+                    Architecture & Design Tools
+                  </h2>
+                  
+                  <div className="space-y-8">
+                    {/* Eraser AI */}
+                    <div className="border-l-4 border-pink-500 pl-4">
+                      <h3 className="mb-2 text-xl font-semibold text-white">Eraser AI</h3>
+                      <p className="mb-3 text-sm text-gray-400">AI-Powered Architecture Diagramming and Documentation Platform</p>
+                      
+                      <h4 className="mb-2 text-sm font-semibold text-cyan-400">Core Capabilities:</h4>
+                      <ul className="mb-4 list-inside list-disc space-y-1 text-gray-300">
+                        <li>AI-generated architecture diagrams from text descriptions</li>
+                        <li>Real-time collaborative diagramming</li>
+                        <li>Automatic documentation generation</li>
+                        <li>Database schema visualization</li>
+                        <li>Cloud infrastructure diagram creation</li>
+                        <li>Version control and diagram history</li>
+                      </ul>
+                      
+                      <h4 className="mb-2 text-sm font-semibold text-cyan-400">AI Value Proposition:</h4>
+                      <p className="text-gray-300">
+                        Eraser AI revolutionizes software architecture documentation by transforming natural language descriptions into professional technical diagrams in seconds, eliminating hours of manual diagramming work. For AI development teams, Eraser AI generates system architecture diagrams showing data flows between ML models, databases, APIs, and frontend components—simply describe "AI invoice processing system with FastAPI backend, PostgreSQL database, and Next.js frontend" and receive production-ready architecture diagrams instantly. The platform's AI understands technical terminology: request "microservices architecture with Redis cache, Docker containers, and Azure AI Foundry integration" and it automatically positions components with proper connections and annotations following industry best practices. For AI consulting delivering to Fortune 500 clients, Eraser AI maintains consistency across documentation: database schemas, cloud infrastructure diagrams, and API architecture all follow the same visual language, while collaborative editing allows distributed teams to refine diagrams in real-time during planning sessions. The platform's version control tracks architectural evolution as AI systems grow, enabling teams to visualize how adding new ML models or data pipelines impacts existing infrastructure. Eraser AI integrates with development workflows, allowing architects to generate diagrams from code repositories or database schemas automatically, ensuring documentation stays synchronized with implementation—critical for regulated industries requiring accurate technical documentation for AI system audits and compliance reviews.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
               {/* Quick Reference Matrix */}
               <section id="reference" className="scroll-mt-32">
                 <div className="rounded-lg bg-slate-900 border border-slate-800 p-6 sm:p-8">
@@ -791,21 +826,52 @@ export default function Services() {
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-slate-800">
+                        {/* Frontend */}
                         <tr><td className="py-3 pr-4 text-white">Next.js</td><td className="py-3 pr-4 text-gray-300">Frontend Framework</td><td className="py-3 pr-4 text-gray-300">Edge AI, SSR for ML</td><td className="py-3 text-gray-300">Fast AI dashboards</td></tr>
                         <tr><td className="py-3 pr-4 text-white">React.js</td><td className="py-3 pr-4 text-gray-300">UI Library</td><td className="py-3 pr-4 text-gray-300">Reactive AI interfaces</td><td className="py-3 text-gray-300">Real-time AI updates</td></tr>
-                        <tr><td className="py-3 pr-4 text-white">Tailwind CSS</td><td className="py-3 pr-4 text-gray-300">Styling</td><td className="py-3 pr-4 text-gray-300">Rapid AI UI iteration</td><td className="py-3 text-gray-300">Data-heavy dashboards</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">Tailwind CSS</td><td className="py-3 pr-4 text-gray-300">Styling Framework</td><td className="py-3 pr-4 text-gray-300">Rapid AI UI iteration</td><td className="py-3 text-gray-300">Data-heavy dashboards</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">ESLint</td><td className="py-3 pr-4 text-gray-300">Code Quality Tool</td><td className="py-3 pr-4 text-gray-300">Prevent AI system bugs</td><td className="py-3 text-gray-300">Mission-critical AI apps</td></tr>
+                        {/* Backend */}
                         <tr><td className="py-3 pr-4 text-white">Python</td><td className="py-3 pr-4 text-gray-300">Backend Language</td><td className="py-3 pr-4 text-gray-300">ML ecosystem access</td><td className="py-3 text-gray-300">Model training, data science</td></tr>
                         <tr><td className="py-3 pr-4 text-white">FastAPI</td><td className="py-3 pr-4 text-gray-300">API Framework</td><td className="py-3 pr-4 text-gray-300">High-concurrency AI serving</td><td className="py-3 text-gray-300">Real-time ML inference APIs</td></tr>
                         <tr><td className="py-3 pr-4 text-white">.NET Core</td><td className="py-3 pr-4 text-gray-300">Enterprise Framework</td><td className="py-3 pr-4 text-gray-300">High-performance AI</td><td className="py-3 text-gray-300">Financial AI, payments</td></tr>
+                        {/* DevOps */}
                         <tr><td className="py-3 pr-4 text-white">Docker</td><td className="py-3 pr-4 text-gray-300">Containerization</td><td className="py-3 pr-4 text-gray-300">ML reproducibility</td><td className="py-3 text-gray-300">Model deployment, scaling</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">Portainer</td><td className="py-3 pr-4 text-gray-300">Container Management</td><td className="py-3 pr-4 text-gray-300">AI stack visualization</td><td className="py-3 text-gray-300">Multi-model orchestration</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">GitHub Actions</td><td className="py-3 pr-4 text-gray-300">CI/CD Platform</td><td className="py-3 pr-4 text-gray-300">Automated ML workflows</td><td className="py-3 text-gray-300">MLOps pipelines</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">GitHub Container Registry</td><td className="py-3 pr-4 text-gray-300">Container Registry</td><td className="py-3 pr-4 text-gray-300">Model image versioning</td><td className="py-3 text-gray-300">Multi-cloud AI deployment</td></tr>
+                        {/* Databases */}
                         <tr><td className="py-3 pr-4 text-white">PostgreSQL</td><td className="py-3 pr-4 text-gray-300">Relational Database</td><td className="py-3 pr-4 text-gray-300">Vector search, hybrid data</td><td className="py-3 text-gray-300">AI + transactional workloads</td></tr>
                         <tr><td className="py-3 pr-4 text-white">Supabase</td><td className="py-3 pr-4 text-gray-300">Backend-as-a-Service</td><td className="py-3 pr-4 text-gray-300">Instant AI APIs</td><td className="py-3 text-gray-300">Rapid AI prototyping</td></tr>
-                        <tr><td className="py-3 pr-4 text-white">Azure Entra</td><td className="py-3 pr-4 text-gray-300">Enterprise Auth</td><td className="py-3 pr-4 text-gray-300">Enterprise AI security</td><td className="py-3 text-gray-300">Fortune 50 AI deployments</td></tr>
-                        <tr><td className="py-3 pr-4 text-white">LangGraph</td><td className="py-3 pr-4 text-gray-300">AI Agent Framework</td><td className="py-3 pr-4 text-gray-300">Stateful multi-step workflows</td><td className="py-3 text-gray-300">Complex business automation</td></tr>
-                        <tr><td className="py-3 pr-4 text-white">ChromaDB</td><td className="py-3 pr-4 text-gray-300">Vector Database</td><td className="py-3 pr-4 text-gray-300">Rapid AI prototyping</td><td className="py-3 text-gray-300">POCs, startups, demos</td></tr>
-                        <tr><td className="py-3 pr-4 text-white">Qdrant</td><td className="py-3 pr-4 text-gray-300">Vector Search Engine</td><td className="py-3 pr-4 text-gray-300">Billion-scale performance</td><td className="py-3 text-gray-300">Enterprise semantic search</td></tr>
-                        <tr><td className="py-3 pr-4 text-white">Mistral</td><td className="py-3 pr-4 text-gray-300">Open LLM</td><td className="py-3 pr-4 text-gray-300">Private AI, zero per-token cost</td><td className="py-3 text-gray-300">Sensitive data, high-volume</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">Azure SQL Server</td><td className="py-3 pr-4 text-gray-300">Cloud Database</td><td className="py-3 pr-4 text-gray-300">In-database ML</td><td className="py-3 text-gray-300">Enterprise AI, compliance</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">SQL Server Enterprise</td><td className="py-3 pr-4 text-gray-300">On-Premise Database</td><td className="py-3 pr-4 text-gray-300">Parallel ML processing</td><td className="py-3 text-gray-300">Air-gapped AI systems</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">MySQL</td><td className="py-3 pr-4 text-gray-300">Open-Source RDBMS</td><td className="py-3 pr-4 text-gray-300">Cost-effective scaling</td><td className="py-3 text-gray-300">Startups, mid-market AI</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">MariaDB</td><td className="py-3 pr-4 text-gray-300">MySQL-Compatible DB</td><td className="py-3 pr-4 text-gray-300">Columnar analytics</td><td className="py-3 text-gray-300">Feature engineering</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">MongoDB</td><td className="py-3 pr-4 text-gray-300">Document Database</td><td className="py-3 pr-4 text-gray-300">Flexible AI data models</td><td className="py-3 text-gray-300">Unstructured AI data</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">Microsoft Garnet</td><td className="py-3 pr-4 text-gray-300">Remote Cache</td><td className="py-3 pr-4 text-gray-300">Ultra-low latency caching</td><td className="py-3 text-gray-300">Real-time inference</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">Redis Cache</td><td className="py-3 pr-4 text-gray-300">In-Memory Store</td><td className="py-3 pr-4 text-gray-300">Sub-ms prediction caching</td><td className="py-3 text-gray-300">High-traffic AI apps</td></tr>
+                        {/* Authentication */}
+                        <tr><td className="py-3 pr-4 text-white">Azure Entra</td><td className="py-3 pr-4 text-gray-300">Enterprise Auth</td><td className="py-3 pr-4 text-gray-300">Enterprise AI security</td><td className="py-3 text-gray-300">Fortune 50 deployments</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">Auth0</td><td className="py-3 pr-4 text-gray-300">Customer Auth</td><td className="py-3 pr-4 text-gray-300">Frictionless AI access</td><td className="py-3 text-gray-300">SaaS AI products</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">AWS IAM</td><td className="py-3 pr-4 text-gray-300">AWS Identity</td><td className="py-3 pr-4 text-gray-300">Fine-grained AI permissions</td><td className="py-3 text-gray-300">AWS AI deployments</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">Okta</td><td className="py-3 pr-4 text-gray-300">Enterprise IAM</td><td className="py-3 pr-4 text-gray-300">Unified multi-cloud auth</td><td className="py-3 text-gray-300">Enterprise consulting</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">NextAuth.js</td><td className="py-3 pr-4 text-gray-300">Next.js Auth</td><td className="py-3 pr-4 text-gray-300">Seamless Next.js integration</td><td className="py-3 text-gray-300">AI startups, rapid dev</td></tr>
+                        {/* AI Platforms */}
+                        <tr><td className="py-3 pr-4 text-white">Azure AI Foundry</td><td className="py-3 pr-4 text-gray-300">AI Platform</td><td className="py-3 pr-4 text-gray-300">Enterprise MLOps</td><td className="py-3 text-gray-300">Regulated industry AI</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">LangGraph</td><td className="py-3 pr-4 text-gray-300">AI Agent Framework</td><td className="py-3 pr-4 text-gray-300">Stateful workflows</td><td className="py-3 text-gray-300">Complex automation</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">Google AI Studio</td><td className="py-3 pr-4 text-gray-300">AI Prototyping</td><td className="py-3 pr-4 text-gray-300">Multimodal testing</td><td className="py-3 text-gray-300">Gemini evaluation</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">Banana</td><td className="py-3 pr-4 text-gray-300">Serverless GPU</td><td className="py-3 pr-4 text-gray-300">Zero-scaling ML infra</td><td className="py-3 text-gray-300">Variable traffic AI</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">Imagen</td><td className="py-3 pr-4 text-gray-300">Text-to-Image AI</td><td className="py-3 pr-4 text-gray-300">Automated visuals</td><td className="py-3 text-gray-300">E-commerce, marketing</td></tr>
+                        {/* Vector Databases */}
+                        <tr><td className="py-3 pr-4 text-white">ChromaDB</td><td className="py-3 pr-4 text-gray-300">Vector Database</td><td className="py-3 pr-4 text-gray-300">Rapid prototyping</td><td className="py-3 text-gray-300">POCs, startups, demos</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">Qdrant</td><td className="py-3 pr-4 text-gray-300">Vector Search</td><td className="py-3 pr-4 text-gray-300">Billion-scale performance</td><td className="py-3 text-gray-300">Enterprise semantic search</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">Azure Cosmos NoSQL</td><td className="py-3 pr-4 text-gray-300">Global NoSQL + Vector</td><td className="py-3 pr-4 text-gray-300">Multi-region vector search</td><td className="py-3 text-gray-300">Global AI applications</td></tr>
+                        {/* Local AI */}
+                        <tr><td className="py-3 pr-4 text-white">Mistral</td><td className="py-3 pr-4 text-gray-300">Open LLM</td><td className="py-3 pr-4 text-gray-300">Private AI, zero cost</td><td className="py-3 text-gray-300">Sensitive data, high-volume</td></tr>
                         <tr><td className="py-3 pr-4 text-white">Ollama</td><td className="py-3 pr-4 text-gray-300">Local LLM Runtime</td><td className="py-3 pr-4 text-gray-300">On-premise deployment</td><td className="py-3 text-gray-300">Air-gapped systems</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">Open WebUI</td><td className="py-3 pr-4 text-gray-300">AI Interface</td><td className="py-3 pr-4 text-gray-300">User-friendly local AI</td><td className="py-3 text-gray-300">Internal AI assistants</td></tr>
+                        {/* Architecture */}
+                        <tr><td className="py-3 pr-4 text-white">Eraser AI</td><td className="py-3 pr-4 text-gray-300">Architecture Diagrams</td><td className="py-3 pr-4 text-gray-300">AI-generated diagrams</td><td className="py-3 text-gray-300">Technical documentation</td></tr>
                       </tbody>
                     </table>
                   </div>
