@@ -39,6 +39,13 @@ export default function Services() {
 
   // Searchable index of all technologies and sections
   const searchableItems = [
+    // AI Development
+    { name: 'Cursor AI', section: 'AI Development', id: 'ai-development' },
+    { name: 'VSCode', section: 'AI Development', id: 'ai-development' },
+    { name: 'Visual Studio Code', section: 'AI Development', id: 'ai-development' },
+    { name: 'Windsurf', section: 'AI Development', id: 'ai-development' },
+    { name: 'Claude Code', section: 'AI Development', id: 'ai-development' },
+    { name: 'Google Antigravity', section: 'AI Development', id: 'ai-development' },
     // Frontend
     { name: 'Next.js', section: 'Frontend Technologies', id: 'frontend' },
     { name: 'React.js', section: 'Frontend Technologies', id: 'frontend' },
@@ -84,6 +91,8 @@ export default function Services() {
     { name: 'Mistral', section: 'Local AI Models', id: 'local-ai' },
     { name: 'Ollama', section: 'Local AI Models', id: 'local-ai' },
     { name: 'Open WebUI', section: 'Local AI Models', id: 'local-ai' },
+    { name: 'Llama Maverick', section: 'Local AI Models', id: 'local-ai' },
+    { name: 'Qwen', section: 'Local AI Models', id: 'local-ai' },
     // Architecture
     { name: 'Eraser AI', section: 'Architecture & Design', id: 'architecture' },
   ];
@@ -159,21 +168,63 @@ export default function Services() {
               {/* AI Development Section */}
               <section id="ai-development" className="scroll-mt-32">
                 <div className="rounded-lg bg-slate-900 border border-slate-800 p-6 sm:p-8">
-                  <h2 className="mb-4 text-2xl font-bold text-cyan-400 sm:text-3xl">
+                  <h2 className="mb-6 text-2xl font-bold text-cyan-400 sm:text-3xl">
                     AI-Powered Development Platform
                   </h2>
                   
-                  <h3 className="mb-3 text-xl font-semibold text-white">
-                    Accelerated Development with Cursor AI & Claude AI, Google Gemini, Cursor Composer
-                  </h3>
-                  
-                  <p className="mb-6 leading-relaxed text-gray-300">
-                    Our development workflow leverages the most advanced AI-powered development tools available today, dramatically increasing productivity while maintaining enterprise-grade code quality. Cursor AI with Model Context Protocol (MCP) serves as our intelligent IDE, providing context-aware code generation, multi-file editing capabilities, and seamless integration with databases, APIs, and development tools. This allows us to understand entire codebases at once, enabling intelligent refactoring and architectural improvements that would take traditional development teams weeks to accomplish.
-                  </p>
-                  
-                  <p className="leading-relaxed text-gray-300">
-                    Combined with Claude AI's Composer and Task Management features, we orchestrate complex multi-step development workflows, automate repetitive tasks, generate comprehensive documentation, and maintain coding standards across large projects. This AI-augmented approach allows us to deliver production-ready applications <span className="font-semibold text-cyan-400">3-5x faster</span> than traditional development methods while reducing bugs and technical debt through intelligent code analysis and automated testing workflows.
-                  </p>
+                  <div className="mb-8 space-y-6">
+                    <div>
+                      <h3 className="mb-3 text-xl font-semibold text-white">
+                        Accelerated Development with AI-Powered IDEs
+                      </h3>
+                      <p className="leading-relaxed text-gray-300">
+                        Our development workflow leverages the most advanced AI-powered development tools available today, dramatically increasing productivity while maintaining enterprise-grade code quality. This AI-augmented approach allows us to deliver production-ready applications <span className="font-semibold text-cyan-400">3-5x faster</span> than traditional development methods while reducing bugs and technical debt through intelligent code analysis and automated testing workflows.
+                      </p>
+                    </div>
+
+                    {/* Development Tools */}
+                    <div className="space-y-6">
+                      {/* Cursor AI */}
+                      <div className="border-l-4 border-cyan-500 pl-4">
+                        <h4 className="mb-2 text-lg font-semibold text-white">Cursor AI</h4>
+                        <p className="text-gray-300">
+                          Cursor AI with Model Context Protocol (MCP) serves as our intelligent IDE, providing context-aware code generation, multi-file editing capabilities, and seamless integration with databases, APIs, and development tools. This allows us to understand entire codebases at once, enabling intelligent refactoring and architectural improvements that would take traditional development teams weeks to accomplish. Combined with Cursor Composer and Task Management features, we orchestrate complex multi-step development workflows, automate repetitive tasks, generate comprehensive documentation, and maintain coding standards across large projects.
+                        </p>
+                      </div>
+
+                      {/* VSCode */}
+                      <div className="border-l-4 border-blue-500 pl-4">
+                        <h4 className="mb-2 text-lg font-semibold text-white">Visual Studio Code (VSCode)</h4>
+                        <p className="text-gray-300">
+                          VSCode provides the foundation for AI-enhanced development with GitHub Copilot integration, offering real-time code suggestions, autocomplete, and intelligent code generation across 30+ programming languages. The platform's extensive extension marketplace enables integration with AI tools, linters, debuggers, and deployment pipelines, creating a customizable AI development environment. For enterprise AI projects, VSCode's remote development capabilities allow teams to code against cloud-based GPU instances while maintaining local IDE responsiveness, essential for training and testing ML models. The editor's IntelliSense powered by AI understands project context, suggesting not just code completions but entire functions and classes based on comments and existing patterns, dramatically accelerating development velocity for AI applications.
+                        </p>
+                      </div>
+
+                      {/* Windsurf */}
+                      <div className="border-l-4 border-teal-500 pl-4">
+                        <h4 className="mb-2 text-lg font-semibold text-white">Windsurf</h4>
+                        <p className="text-gray-300">
+                          Windsurf revolutionizes AI-powered coding with agentic workflows that understand project architecture and execute multi-step development tasks autonomously. The platform analyzes entire codebases to provide contextually aware suggestions, automatically refactoring code across multiple files while maintaining consistency and best practices. For AI development teams, Windsurf excels at understanding complex ML pipelines and data processing workflows, suggesting optimizations and identifying potential bottlenecks before they impact production. The tool's flow state features minimize context switching by anticipating developer needs, pre-loading relevant files, documentation, and API references based on current task context, allowing developers to maintain deep focus on complex AI algorithm implementation.
+                        </p>
+                      </div>
+
+                      {/* Claude Code */}
+                      <div className="border-l-4 border-purple-500 pl-4">
+                        <h4 className="mb-2 text-lg font-semibold text-white">Claude Code</h4>
+                        <p className="text-gray-300">
+                          Claude Code brings Anthropic's advanced reasoning capabilities directly into the development workflow, excelling at understanding complex codebases and providing thoughtful, context-aware suggestions for AI system architecture. The platform's long context window enables analysis of entire projects simultaneously, identifying architectural patterns and suggesting improvements that consider dependencies across thousands of files. For AI consulting projects, Claude Code generates production-quality code with built-in security considerations, handling edge cases and error conditions that junior developers often miss. The system's ability to explain its suggestions and reasoning helps teams understand not just what to code, but why specific approaches are optimal for AI applications, serving as an intelligent pair programmer that elevates entire team capabilities.
+                        </p>
+                      </div>
+
+                      {/* Google Antigravity */}
+                      <div className="border-l-4 border-yellow-500 pl-4">
+                        <h4 className="mb-2 text-lg font-semibold text-white">Google Antigravity Kit</h4>
+                        <p className="text-gray-300">
+                          Google Antigravity Kit accelerates AI prototyping and development with intelligent code generation powered by Google's latest AI models, seamlessly integrated with Google Cloud services and APIs. The platform excels at generating boilerplate code for AI applications, automatically creating data pipelines, API endpoints, and model serving infrastructure that follow Google Cloud best practices. For teams building AI systems on Google Cloud, Antigravity Kit understands the entire GCP ecosystem—suggesting optimal services, generating Terraform configurations, and creating deployment scripts that leverage Vertex AI, BigQuery, and Cloud Run. The tool's multimodal capabilities enable developers to describe desired functionality through natural language, diagrams, or examples, with Antigravity Kit generating production-ready code that integrates authentication, monitoring, and error handling automatically, reducing time from concept to deployed AI application from weeks to hours.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </section>
 
@@ -784,6 +835,28 @@ export default function Services() {
                         Open WebUI transforms local AI models into enterprise-ready applications with professional interfaces, user management, and document processing. For companies wanting ChatGPT functionality with data privacy, Open WebUI provides an identical experience while keeping conversations on corporate servers.
                       </p>
                     </div>
+
+                    {/* Llama Maverick */}
+                    <div className="border-l-4 border-red-500 pl-4">
+                      <h3 className="mb-2 text-xl font-semibold text-white">Llama Maverick</h3>
+                      <p className="mb-3 text-sm text-gray-400">Advanced Open-Source Language Model</p>
+                      
+                      <h4 className="mb-2 text-sm font-semibold text-cyan-400">AI Value Proposition:</h4>
+                      <p className="text-gray-300">
+                        Llama Maverick delivers cutting-edge AI capabilities for enterprises requiring state-of-the-art language understanding while maintaining complete data sovereignty and zero API dependencies. The model excels at complex reasoning tasks, multi-turn conversations, and domain-specific applications where fine-tuning on proprietary data creates competitive advantages. For AI consulting serving regulated industries (healthcare, finance, legal), Llama Maverick enables processing sensitive documents entirely on-premise without external API calls, ensuring HIPAA, SOC 2, and data residency compliance automatically. The model's efficient architecture runs on consumer-grade hardware while delivering performance comparable to cloud-based solutions, making it ideal for edge deployments where AI must operate in disconnected environments or with strict latency requirements. Llama Maverick's permissive licensing allows commercial use without restrictions, enabling AI startups to build products and services without royalty fees or usage limitations. For organizations processing high volumes of text (customer support, document analysis, content generation), Llama Maverick eliminates per-token costs that make cloud APIs prohibitively expensive at scale—processing millions of requests costs only infrastructure, not API fees. The model integrates seamlessly with existing AI stacks through standard APIs, allowing applications to switch from cloud models to Llama Maverick with minimal code changes while gaining benefits of local deployment, predictable costs, and complete control over model behavior and updates.
+                      </p>
+                    </div>
+
+                    {/* Qwen */}
+                    <div className="border-l-4 border-teal-500 pl-4">
+                      <h3 className="mb-2 text-xl font-semibold text-white">Qwen</h3>
+                      <p className="mb-3 text-sm text-gray-400">Multilingual Large Language Model</p>
+                      
+                      <h4 className="mb-2 text-sm font-semibold text-cyan-400">AI Value Proposition:</h4>
+                      <p className="text-gray-300">
+                        Qwen revolutionizes global AI deployments with exceptional multilingual capabilities spanning 30+ languages, enabling enterprises to deploy single AI systems that serve international markets without separate models per region. For multinational corporations, Qwen processes customer inquiries, analyzes documents, and generates content in Chinese, Japanese, Korean, Arabic, and European languages with native-level fluency, eliminating the complexity and cost of maintaining language-specific AI infrastructure. The model's strong performance on technical and domain-specific content makes it ideal for enterprise knowledge management: processing technical documentation, regulatory compliance materials, and industry-specific terminology across languages while maintaining semantic accuracy. Qwen's efficient architecture achieves competitive performance with smaller parameter counts compared to Western models, reducing GPU memory requirements and inference costs—critical for organizations deploying AI at scale across global operations. For AI consulting serving Asian markets, Qwen's deep understanding of Chinese, Japanese, and Korean languages and cultural context surpasses models primarily trained on English data, providing superior results for regional applications without requiring expensive fine-tuning. The model supports both cloud and on-premise deployment, allowing enterprises to meet data sovereignty requirements in markets with strict data localization laws (China, Russia, EU) while maintaining consistent AI capabilities globally. Qwen's open-source availability and active development community mean continuous improvements and specialized variants (Qwen-VL for vision, Qwen-Audio for speech) that extend capabilities beyond text, enabling comprehensive multimodal AI systems for global enterprises with a single, unified technology foundation.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </section>
@@ -838,6 +911,12 @@ export default function Services() {
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-slate-800">
+                        {/* AI Development */}
+                        <tr><td className="py-3 pr-4 text-white">Cursor AI</td><td className="py-3 pr-4 text-gray-300">AI IDE</td><td className="py-3 pr-4 text-gray-300">Context-aware code generation</td><td className="py-3 text-gray-300">Full-stack AI development</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">VSCode</td><td className="py-3 pr-4 text-gray-300">Code Editor</td><td className="py-3 pr-4 text-gray-300">Copilot integration</td><td className="py-3 text-gray-300">AI-enhanced development</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">Windsurf</td><td className="py-3 pr-4 text-gray-300">Agentic IDE</td><td className="py-3 pr-4 text-gray-300">Multi-step autonomous tasks</td><td className="py-3 text-gray-300">Flow state development</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">Claude Code</td><td className="py-3 pr-4 text-gray-300">AI Code Assistant</td><td className="py-3 pr-4 text-gray-300">Advanced reasoning</td><td className="py-3 text-gray-300">Complex architecture</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">Google Antigravity</td><td className="py-3 pr-4 text-gray-300">AI Prototyping</td><td className="py-3 pr-4 text-gray-300">GCP-integrated code gen</td><td className="py-3 text-gray-300">Google Cloud AI apps</td></tr>
                         {/* Frontend */}
                         <tr><td className="py-3 pr-4 text-white">Next.js</td><td className="py-3 pr-4 text-gray-300">Frontend Framework</td><td className="py-3 pr-4 text-gray-300">Edge AI, SSR for ML</td><td className="py-3 text-gray-300">Fast AI dashboards</td></tr>
                         <tr><td className="py-3 pr-4 text-white">React.js</td><td className="py-3 pr-4 text-gray-300">UI Library</td><td className="py-3 pr-4 text-gray-300">Reactive AI interfaces</td><td className="py-3 text-gray-300">Real-time AI updates</td></tr>
@@ -883,6 +962,8 @@ export default function Services() {
                         <tr><td className="py-3 pr-4 text-white">Mistral</td><td className="py-3 pr-4 text-gray-300">Open LLM</td><td className="py-3 pr-4 text-gray-300">Private AI, zero cost</td><td className="py-3 text-gray-300">Sensitive data, high-volume</td></tr>
                         <tr><td className="py-3 pr-4 text-white">Ollama</td><td className="py-3 pr-4 text-gray-300">Local LLM Runtime</td><td className="py-3 pr-4 text-gray-300">On-premise deployment</td><td className="py-3 text-gray-300">Air-gapped systems</td></tr>
                         <tr><td className="py-3 pr-4 text-white">Open WebUI</td><td className="py-3 pr-4 text-gray-300">AI Interface</td><td className="py-3 pr-4 text-gray-300">User-friendly local AI</td><td className="py-3 text-gray-300">Internal AI assistants</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">Llama Maverick</td><td className="py-3 pr-4 text-gray-300">Advanced Open LLM</td><td className="py-3 pr-4 text-gray-300">State-of-the-art reasoning</td><td className="py-3 text-gray-300">Complex tasks, edge deployment</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">Qwen</td><td className="py-3 pr-4 text-gray-300">Multilingual LLM</td><td className="py-3 pr-4 text-gray-300">30+ language support</td><td className="py-3 text-gray-300">Global AI deployments</td></tr>
                         {/* Architecture */}
                         <tr><td className="py-3 pr-4 text-white">Eraser AI</td><td className="py-3 pr-4 text-gray-300">Architecture Diagrams</td><td className="py-3 pr-4 text-gray-300">AI-generated diagrams</td><td className="py-3 text-gray-300">Technical documentation</td></tr>
                       </tbody>
