@@ -53,6 +53,7 @@ export default function Services() {
     { name: 'Portainer', section: 'DevOps & Infrastructure', id: 'devops' },
     { name: 'GitHub Actions', section: 'DevOps & Infrastructure', id: 'devops' },
     { name: 'GitHub Container Registry', section: 'DevOps & Infrastructure', id: 'devops' },
+    { name: 'Terraform', section: 'DevOps & Infrastructure', id: 'devops' },
     // Database
     { name: 'PostgreSQL', section: 'Database Technologies', id: 'database' },
     { name: 'Supabase', section: 'Database Technologies', id: 'database' },
@@ -440,6 +441,17 @@ export default function Services() {
                       <h4 className="mb-2 text-sm font-semibold text-cyan-400">AI Value Proposition:</h4>
                       <p className="text-gray-300">
                         GitHub Container Registry provides secure, version-controlled storage for AI model containers directly integrated with source code repositories, ensuring complete traceability from code to deployed model. For AI systems, the registry stores containerized models with specific library versions, CUDA dependencies, and preprocessing pipelines, guaranteeing that the exact model environment tested in development runs identically in production. The platform's fine-grained access control allows AI teams to manage who can pull production model containers while maintaining separate permissions for development images—critical for enterprises with compliance requirements. Integration with GitHub Actions enables automated container builds and security scanning: when data scientists push model updates, containers are automatically built, scanned for vulnerabilities, tagged with version numbers, and deployed only if security checks pass. For multi-cloud AI deployments, Container Registry provides a single source of truth for model images that can be pulled to AWS, Azure, GCP, or on-premise infrastructure, eliminating the need to maintain separate registries per cloud provider.
+                      </p>
+                    </div>
+
+                    {/* Terraform */}
+                    <div className="border-l-4 border-violet-600 pl-4">
+                      <h3 className="mb-2 text-xl font-semibold text-white">Terraform</h3>
+                      <p className="mb-3 text-sm text-gray-400">Infrastructure as Code Platform</p>
+                      
+                      <h4 className="mb-2 text-sm font-semibold text-cyan-400">AI Value Proposition:</h4>
+                      <p className="text-gray-300">
+                        Terraform revolutionizes AI infrastructure management by defining cloud resources, databases, networks, and GPU clusters as code, enabling AI teams to provision entire ML environments in minutes with guaranteed consistency across development, staging, and production. For AI applications requiring complex infrastructure (Kubernetes clusters for model serving, vector databases, Redis caches, load balancers), Terraform scripts capture the complete architecture, allowing instant replication for new clients or disaster recovery scenarios. The platform's state management tracks infrastructure changes over time, critical when AI systems scale from prototype (single GPU instance) to production (multi-region deployment with auto-scaling model servers)—teams can preview infrastructure modifications before applying them, preventing costly mistakes like accidentally deleting production databases storing training data. Terraform's multi-cloud support allows AI consulting firms to deploy identical architectures to AWS, Azure, or GCP with minimal code changes, providing client flexibility and avoiding vendor lock-in. For regulated AI deployments, Terraform modules codify compliance requirements (encryption at rest, network isolation, audit logging) ensuring every AI environment meets security standards automatically. The platform integrates with CI/CD pipelines: when AI teams commit infrastructure changes, automated testing validates Terraform scripts before applying them to production, while drift detection alerts when manual changes create inconsistencies between code and actual infrastructure—essential for maintaining governance in enterprise AI systems where unauthorized modifications could compromise security or model performance.
                       </p>
                     </div>
                   </div>
@@ -840,6 +852,7 @@ export default function Services() {
                         <tr><td className="py-3 pr-4 text-white">Portainer</td><td className="py-3 pr-4 text-gray-300">Container Management</td><td className="py-3 pr-4 text-gray-300">AI stack visualization</td><td className="py-3 text-gray-300">Multi-model orchestration</td></tr>
                         <tr><td className="py-3 pr-4 text-white">GitHub Actions</td><td className="py-3 pr-4 text-gray-300">CI/CD Platform</td><td className="py-3 pr-4 text-gray-300">Automated ML workflows</td><td className="py-3 text-gray-300">MLOps pipelines</td></tr>
                         <tr><td className="py-3 pr-4 text-white">GitHub Container Registry</td><td className="py-3 pr-4 text-gray-300">Container Registry</td><td className="py-3 pr-4 text-gray-300">Model image versioning</td><td className="py-3 text-gray-300">Multi-cloud AI deployment</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">Terraform</td><td className="py-3 pr-4 text-gray-300">Infrastructure as Code</td><td className="py-3 pr-4 text-gray-300">Reproducible AI infrastructure</td><td className="py-3 text-gray-300">Multi-cloud environments</td></tr>
                         {/* Databases */}
                         <tr><td className="py-3 pr-4 text-white">PostgreSQL</td><td className="py-3 pr-4 text-gray-300">Relational Database</td><td className="py-3 pr-4 text-gray-300">Vector search, hybrid data</td><td className="py-3 text-gray-300">AI + transactional workloads</td></tr>
                         <tr><td className="py-3 pr-4 text-white">Supabase</td><td className="py-3 pr-4 text-gray-300">Backend-as-a-Service</td><td className="py-3 pr-4 text-gray-300">Instant AI APIs</td><td className="py-3 text-gray-300">Rapid AI prototyping</td></tr>
