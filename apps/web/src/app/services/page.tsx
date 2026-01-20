@@ -83,6 +83,7 @@ export default function Services() {
     { name: 'Google AI Studio', section: 'AI/ML Platforms', id: 'ai-platforms' },
     { name: 'Banana', section: 'AI/ML Platforms', id: 'ai-platforms' },
     { name: 'Imagen', section: 'AI/ML Platforms', id: 'ai-platforms' },
+    { name: 'Amazon Bedrock', section: 'AI/ML Platforms', id: 'ai-platforms' },
     // Vector DB
     { name: 'ChromaDB', section: 'Vector Databases', id: 'vector-db' },
     { name: 'Qdrant', section: 'Vector Databases', id: 'vector-db' },
@@ -747,6 +748,17 @@ export default function Services() {
                         Imagen enables enterprises to automate visual content creation at scale, particularly valuable for e-commerce, marketing, and product development. For retail companies, Imagen generates lifestyle images and seasonal variations from product descriptions—reducing photography costs by 70% while accelerating time-to-market.
                       </p>
                     </div>
+
+                    {/* Amazon Bedrock */}
+                    <div className="border-l-4 border-orange-600 pl-4">
+                      <h3 className="mb-2 text-xl font-semibold text-white">Amazon Bedrock</h3>
+                      <p className="mb-3 text-sm text-gray-400">Fully Managed Foundation Model Service</p>
+                      
+                      <h4 className="mb-2 text-sm font-semibold text-cyan-400">AI Value Proposition:</h4>
+                      <p className="text-gray-300">
+                        Amazon Bedrock provides enterprise access to multiple foundation models (Claude, Llama, Mistral, Titan, Cohere) through a unified API, eliminating vendor lock-in while enabling teams to select optimal models for each AI use case without infrastructure management. For AI applications requiring production-grade reliability, Bedrock delivers enterprise SLAs, automatic scaling, and built-in security that handles millions of inference requests while maintaining sub-second latency—critical for customer-facing AI features like chatbots and recommendation systems. The platform's model customization capabilities allow enterprises to fine-tune foundation models on proprietary data without exposing sensitive information to model providers, essential for financial services and healthcare organizations building AI systems with domain-specific knowledge. Bedrock's integration with AWS services (S3, Lambda, SageMaker) enables seamless data pipelines where training data stored in S3 automatically fine-tunes models, with inference accessible via Lambda functions and API Gateway—reducing development time from months to weeks. For AI consulting serving multiple clients, Bedrock's pay-per-use pricing and model selection flexibility means recommending optimal AI solutions without committing to specific vendors, while AWS's compliance certifications (SOC 2, HIPAA, FedRAMP) ensure client data meets regulatory requirements automatically. The platform's knowledge bases and agents features enable rapid RAG (Retrieval-Augmented Generation) implementation, allowing AI applications to query enterprise documents and databases without custom vector search infrastructure, accelerating time-to-value for AI projects requiring up-to-date information beyond model training data.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </section>
@@ -954,6 +966,7 @@ export default function Services() {
                         <tr><td className="py-3 pr-4 text-white">Google AI Studio</td><td className="py-3 pr-4 text-gray-300">AI Prototyping</td><td className="py-3 pr-4 text-gray-300">Multimodal testing</td><td className="py-3 text-gray-300">Gemini evaluation</td></tr>
                         <tr><td className="py-3 pr-4 text-white">Banana</td><td className="py-3 pr-4 text-gray-300">Serverless GPU</td><td className="py-3 pr-4 text-gray-300">Zero-scaling ML infra</td><td className="py-3 text-gray-300">Variable traffic AI</td></tr>
                         <tr><td className="py-3 pr-4 text-white">Imagen</td><td className="py-3 pr-4 text-gray-300">Text-to-Image AI</td><td className="py-3 pr-4 text-gray-300">Automated visuals</td><td className="py-3 text-gray-300">E-commerce, marketing</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">Amazon Bedrock</td><td className="py-3 pr-4 text-gray-300">Foundation Model Service</td><td className="py-3 pr-4 text-gray-300">Multi-model access</td><td className="py-3 text-gray-300">AWS AI applications</td></tr>
                         {/* Vector Databases */}
                         <tr><td className="py-3 pr-4 text-white">ChromaDB</td><td className="py-3 pr-4 text-gray-300">Vector Database</td><td className="py-3 pr-4 text-gray-300">Rapid prototyping</td><td className="py-3 text-gray-300">POCs, startups, demos</td></tr>
                         <tr><td className="py-3 pr-4 text-white">Qdrant</td><td className="py-3 pr-4 text-gray-300">Vector Search</td><td className="py-3 pr-4 text-gray-300">Billion-scale performance</td><td className="py-3 text-gray-300">Enterprise semantic search</td></tr>
