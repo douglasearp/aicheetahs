@@ -88,6 +88,7 @@ export default function Services() {
     { name: 'ChromaDB', section: 'Vector Databases', id: 'vector-db' },
     { name: 'Qdrant', section: 'Vector Databases', id: 'vector-db' },
     { name: 'Azure Cosmos NoSQL', section: 'Vector Databases', id: 'vector-db' },
+    { name: 'Milvus', section: 'Vector Databases', id: 'vector-db' },
     // Local AI
     { name: 'Mistral', section: 'Local AI Models', id: 'local-ai' },
     { name: 'Ollama', section: 'Local AI Models', id: 'local-ai' },
@@ -166,69 +167,6 @@ export default function Services() {
 
             {/* Main Content Area */}
             <div className="flex-1 space-y-12 pb-16">
-              {/* AI Development Section */}
-              <section id="ai-development" className="scroll-mt-32">
-                <div className="rounded-lg bg-slate-900 border border-slate-800 p-6 sm:p-8">
-                  <h2 className="mb-6 text-2xl font-bold text-cyan-400 sm:text-3xl">
-                    AI-Powered Development Platform
-                  </h2>
-                  
-                  <div className="mb-8 space-y-6">
-                    <div>
-                      <h3 className="mb-3 text-xl font-semibold text-white">
-                        Accelerated Development with AI-Powered IDEs
-                      </h3>
-                      <p className="leading-relaxed text-gray-300">
-                        Our development workflow leverages the most advanced AI-powered development tools available today, dramatically increasing productivity while maintaining enterprise-grade code quality. This AI-augmented approach allows us to deliver production-ready applications <span className="font-semibold text-cyan-400">3-5x faster</span> than traditional development methods while reducing bugs and technical debt through intelligent code analysis and automated testing workflows.
-                      </p>
-                    </div>
-
-                    {/* Development Tools */}
-                    <div className="space-y-6">
-                      {/* Cursor AI */}
-                      <div className="border-l-4 border-cyan-500 pl-4">
-                        <h4 className="mb-2 text-lg font-semibold text-white">Cursor AI</h4>
-                        <p className="text-gray-300">
-                          Cursor AI with Model Context Protocol (MCP) serves as our intelligent IDE, providing context-aware code generation, multi-file editing capabilities, and seamless integration with databases, APIs, and development tools. This allows us to understand entire codebases at once, enabling intelligent refactoring and architectural improvements that would take traditional development teams weeks to accomplish. Combined with Cursor Composer and Task Management features, we orchestrate complex multi-step development workflows, automate repetitive tasks, generate comprehensive documentation, and maintain coding standards across large projects.
-                        </p>
-                      </div>
-
-                      {/* VSCode */}
-                      <div className="border-l-4 border-blue-500 pl-4">
-                        <h4 className="mb-2 text-lg font-semibold text-white">Visual Studio Code (VSCode)</h4>
-                        <p className="text-gray-300">
-                          VSCode provides the foundation for AI-enhanced development with GitHub Copilot integration, offering real-time code suggestions, autocomplete, and intelligent code generation across 30+ programming languages. The platform's extensive extension marketplace enables integration with AI tools, linters, debuggers, and deployment pipelines, creating a customizable AI development environment. For enterprise AI projects, VSCode's remote development capabilities allow teams to code against cloud-based GPU instances while maintaining local IDE responsiveness, essential for training and testing ML models. The editor's IntelliSense powered by AI understands project context, suggesting not just code completions but entire functions and classes based on comments and existing patterns, dramatically accelerating development velocity for AI applications.
-                        </p>
-                      </div>
-
-                      {/* Windsurf */}
-                      <div className="border-l-4 border-teal-500 pl-4">
-                        <h4 className="mb-2 text-lg font-semibold text-white">Windsurf</h4>
-                        <p className="text-gray-300">
-                          Windsurf revolutionizes AI-powered coding with agentic workflows that understand project architecture and execute multi-step development tasks autonomously. The platform analyzes entire codebases to provide contextually aware suggestions, automatically refactoring code across multiple files while maintaining consistency and best practices. For AI development teams, Windsurf excels at understanding complex ML pipelines and data processing workflows, suggesting optimizations and identifying potential bottlenecks before they impact production. The tool's flow state features minimize context switching by anticipating developer needs, pre-loading relevant files, documentation, and API references based on current task context, allowing developers to maintain deep focus on complex AI algorithm implementation.
-                        </p>
-                      </div>
-
-                      {/* Claude Code */}
-                      <div className="border-l-4 border-purple-500 pl-4">
-                        <h4 className="mb-2 text-lg font-semibold text-white">Claude Code</h4>
-                        <p className="text-gray-300">
-                          Claude Code brings Anthropic's advanced reasoning capabilities directly into the development workflow, excelling at understanding complex codebases and providing thoughtful, context-aware suggestions for AI system architecture. The platform's long context window enables analysis of entire projects simultaneously, identifying architectural patterns and suggesting improvements that consider dependencies across thousands of files. For AI consulting projects, Claude Code generates production-quality code with built-in security considerations, handling edge cases and error conditions that junior developers often miss. The system's ability to explain its suggestions and reasoning helps teams understand not just what to code, but why specific approaches are optimal for AI applications, serving as an intelligent pair programmer that elevates entire team capabilities.
-                        </p>
-                      </div>
-
-                      {/* Google Antigravity */}
-                      <div className="border-l-4 border-yellow-500 pl-4">
-                        <h4 className="mb-2 text-lg font-semibold text-white">Google Antigravity Kit</h4>
-                        <p className="text-gray-300">
-                          Google Antigravity Kit accelerates AI prototyping and development with intelligent code generation powered by Google's latest AI models, seamlessly integrated with Google Cloud services and APIs. The platform excels at generating boilerplate code for AI applications, automatically creating data pipelines, API endpoints, and model serving infrastructure that follow Google Cloud best practices. For teams building AI systems on Google Cloud, Antigravity Kit understands the entire GCP ecosystem—suggesting optimal services, generating Terraform configurations, and creating deployment scripts that leverage Vertex AI, BigQuery, and Cloud Run. The tool's multimodal capabilities enable developers to describe desired functionality through natural language, diagrams, or examples, with Antigravity Kit generating production-ready code that integrates authentication, monitoring, and error handling automatically, reducing time from concept to deployed AI application from weeks to hours.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
               {/* Search Technologies */}
               <section className="scroll-mt-32">
                 <div className="rounded-lg bg-slate-900 border border-slate-800 p-6 sm:p-8">
@@ -301,6 +239,69 @@ export default function Services() {
                         <p className="text-center text-gray-400">No technologies found matching "{searchQuery}"</p>
                       </div>
                     )}
+                  </div>
+                </div>
+              </section>
+
+              {/* AI Development Section */}
+              <section id="ai-development" className="scroll-mt-32">
+                <div className="rounded-lg bg-slate-900 border border-slate-800 p-6 sm:p-8">
+                  <h2 className="mb-6 text-2xl font-bold text-cyan-400 sm:text-3xl">
+                    AI-Powered Development Platform
+                  </h2>
+                  
+                  <div className="mb-8 space-y-6">
+                    <div>
+                      <h3 className="mb-3 text-xl font-semibold text-white">
+                        Accelerated Development with AI-Powered IDEs
+                      </h3>
+                      <p className="leading-relaxed text-gray-300">
+                        Our development workflow leverages the most advanced AI-powered development tools available today, dramatically increasing productivity while maintaining enterprise-grade code quality. This AI-augmented approach allows us to deliver production-ready applications <span className="font-semibold text-cyan-400">3-5x faster</span> than traditional development methods while reducing bugs and technical debt through intelligent code analysis and automated testing workflows.
+                      </p>
+                    </div>
+
+                    {/* Development Tools */}
+                    <div className="space-y-6">
+                      {/* Cursor AI */}
+                      <div className="border-l-4 border-cyan-500 pl-4">
+                        <h4 className="mb-2 text-lg font-semibold text-white">Cursor AI</h4>
+                        <p className="text-gray-300">
+                          Cursor AI with Model Context Protocol (MCP) serves as our intelligent IDE, providing context-aware code generation, multi-file editing capabilities, and seamless integration with databases, APIs, and development tools. This allows us to understand entire codebases at once, enabling intelligent refactoring and architectural improvements that would take traditional development teams weeks to accomplish. Combined with Cursor Composer and Task Management features, we orchestrate complex multi-step development workflows, automate repetitive tasks, generate comprehensive documentation, and maintain coding standards across large projects.
+                        </p>
+                      </div>
+
+                      {/* VSCode */}
+                      <div className="border-l-4 border-blue-500 pl-4">
+                        <h4 className="mb-2 text-lg font-semibold text-white">Visual Studio Code (VSCode)</h4>
+                        <p className="text-gray-300">
+                          VSCode provides the foundation for AI-enhanced development with GitHub Copilot integration, offering real-time code suggestions, autocomplete, and intelligent code generation across 30+ programming languages. The platform's extensive extension marketplace enables integration with AI tools, linters, debuggers, and deployment pipelines, creating a customizable AI development environment. For enterprise AI projects, VSCode's remote development capabilities allow teams to code against cloud-based GPU instances while maintaining local IDE responsiveness, essential for training and testing ML models. The editor's IntelliSense powered by AI understands project context, suggesting not just code completions but entire functions and classes based on comments and existing patterns, dramatically accelerating development velocity for AI applications.
+                        </p>
+                      </div>
+
+                      {/* Windsurf */}
+                      <div className="border-l-4 border-teal-500 pl-4">
+                        <h4 className="mb-2 text-lg font-semibold text-white">Windsurf</h4>
+                        <p className="text-gray-300">
+                          Windsurf revolutionizes AI-powered coding with agentic workflows that understand project architecture and execute multi-step development tasks autonomously. The platform analyzes entire codebases to provide contextually aware suggestions, automatically refactoring code across multiple files while maintaining consistency and best practices. For AI development teams, Windsurf excels at understanding complex ML pipelines and data processing workflows, suggesting optimizations and identifying potential bottlenecks before they impact production. The tool's flow state features minimize context switching by anticipating developer needs, pre-loading relevant files, documentation, and API references based on current task context, allowing developers to maintain deep focus on complex AI algorithm implementation.
+                        </p>
+                      </div>
+
+                      {/* Claude Code */}
+                      <div className="border-l-4 border-purple-500 pl-4">
+                        <h4 className="mb-2 text-lg font-semibold text-white">Claude Code</h4>
+                        <p className="text-gray-300">
+                          Claude Code brings Anthropic's advanced reasoning capabilities directly into the development workflow, excelling at understanding complex codebases and providing thoughtful, context-aware suggestions for AI system architecture. The platform's long context window enables analysis of entire projects simultaneously, identifying architectural patterns and suggesting improvements that consider dependencies across thousands of files. For AI consulting projects, Claude Code generates production-quality code with built-in security considerations, handling edge cases and error conditions that junior developers often miss. The system's ability to explain its suggestions and reasoning helps teams understand not just what to code, but why specific approaches are optimal for AI applications, serving as an intelligent pair programmer that elevates entire team capabilities.
+                        </p>
+                      </div>
+
+                      {/* Google Antigravity */}
+                      <div className="border-l-4 border-yellow-500 pl-4">
+                        <h4 className="mb-2 text-lg font-semibold text-white">Google Antigravity Kit</h4>
+                        <p className="text-gray-300">
+                          Google Antigravity Kit accelerates AI prototyping and development with intelligent code generation powered by Google's latest AI models, seamlessly integrated with Google Cloud services and APIs. The platform excels at generating boilerplate code for AI applications, automatically creating data pipelines, API endpoints, and model serving infrastructure that follow Google Cloud best practices. For teams building AI systems on Google Cloud, Antigravity Kit understands the entire GCP ecosystem—suggesting optimal services, generating Terraform configurations, and creating deployment scripts that leverage Vertex AI, BigQuery, and Cloud Run. The tool's multimodal capabilities enable developers to describe desired functionality through natural language, diagrams, or examples, with Antigravity Kit generating production-ready code that integrates authentication, monitoring, and error handling automatically, reducing time from concept to deployed AI application from weeks to hours.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </section>
@@ -803,6 +804,17 @@ export default function Services() {
                         Azure Cosmos NoSQL combines globally distributed document storage with native vector search capabilities, enabling AI applications to store transactional data, embeddings, and metadata in a single database with automatic multi-region replication and sub-10ms latency worldwide. For global AI applications serving millions of users, Cosmos DB's vector indexing allows semantic search across product catalogs, customer support documents, and user-generated content while maintaining single-digit millisecond read latency in 30+ Azure regions simultaneously. The platform's multi-model API support (NoSQL, MongoDB, Cassandra, Gremlin) means AI applications can use familiar interfaces while gaining enterprise features like automatic scaling, 99.999% availability SLA, and compliance certifications (SOC 2, HIPAA, ISO 27001). For AI-powered e-commerce and recommendation systems, Cosmos DB stores user profiles, purchase history, and preference embeddings together, enabling real-time personalization queries that combine transactional filters with vector similarity in milliseconds. The database's integration with Azure AI services allows stored documents to be automatically vectorized and indexed for semantic search, while change feed capabilities enable real-time ML model updates whenever new data arrives—critical for fraud detection and recommendation systems requiring immediate adaptation to user behavior.
                       </p>
                     </div>
+
+                    {/* Milvus */}
+                    <div className="border-l-4 border-green-600 pl-4">
+                      <h3 className="mb-2 text-xl font-semibold text-white">Milvus</h3>
+                      <p className="mb-3 text-sm text-gray-400">Open-Source Vector Database for AI Applications</p>
+                      
+                      <h4 className="mb-2 text-sm font-semibold text-cyan-400">AI Value Proposition:</h4>
+                      <p className="text-gray-300">
+                        Milvus delivers purpose-built vector database capabilities for AI applications requiring massive-scale similarity search, processing billions of embeddings with millisecond query latency through advanced indexing algorithms (HNSW, IVF, DiskANN) optimized for different use cases and hardware configurations. For AI systems handling multimodal data (text, images, audio, video), Milvus stores and searches embeddings from multiple models simultaneously, enabling applications like reverse image search, audio fingerprinting, and cross-modal retrieval where users find images using text queries or discover similar videos through audio analysis. The platform's distributed architecture scales horizontally across commodity hardware, allowing AI startups to begin with single-node deployments and scale to petabyte-scale vector collections as user bases grow, without architectural rewrites or data migration—critical for rapidly scaling AI products. Milvus's GPU acceleration capabilities leverage NVIDIA GPUs for both indexing and search operations, achieving 10-100x performance improvements over CPU-only solutions, essential for real-time AI applications like fraud detection and recommendation engines serving millions of concurrent users. For AI consulting delivering solutions across cloud providers, Milvus's cloud-agnostic design deploys identically on AWS, Azure, GCP, or on-premise infrastructure, while managed service offerings (Zilliz Cloud) provide enterprise features without operational overhead. The database's integration with popular AI frameworks (LangChain, LlamaIndex, Haystack) and embedding models (OpenAI, Cohere, Hugging Face) accelerates RAG implementation, allowing developers to build production-ready AI chatbots and question-answering systems in days rather than months, with built-in support for hybrid search combining semantic similarity with traditional metadata filtering for precise, contextually relevant results.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </section>
@@ -971,6 +983,7 @@ export default function Services() {
                         <tr><td className="py-3 pr-4 text-white">ChromaDB</td><td className="py-3 pr-4 text-gray-300">Vector Database</td><td className="py-3 pr-4 text-gray-300">Rapid prototyping</td><td className="py-3 text-gray-300">POCs, startups, demos</td></tr>
                         <tr><td className="py-3 pr-4 text-white">Qdrant</td><td className="py-3 pr-4 text-gray-300">Vector Search</td><td className="py-3 pr-4 text-gray-300">Billion-scale performance</td><td className="py-3 text-gray-300">Enterprise semantic search</td></tr>
                         <tr><td className="py-3 pr-4 text-white">Azure Cosmos NoSQL</td><td className="py-3 pr-4 text-gray-300">Global NoSQL + Vector</td><td className="py-3 pr-4 text-gray-300">Multi-region vector search</td><td className="py-3 text-gray-300">Global AI applications</td></tr>
+                        <tr><td className="py-3 pr-4 text-white">Milvus</td><td className="py-3 pr-4 text-gray-300">Vector Database</td><td className="py-3 pr-4 text-gray-300">Massive-scale similarity search</td><td className="py-3 text-gray-300">Multimodal AI, RAG systems</td></tr>
                         {/* Local AI */}
                         <tr><td className="py-3 pr-4 text-white">Mistral</td><td className="py-3 pr-4 text-gray-300">Open LLM</td><td className="py-3 pr-4 text-gray-300">Private AI, zero cost</td><td className="py-3 text-gray-300">Sensitive data, high-volume</td></tr>
                         <tr><td className="py-3 pr-4 text-white">Ollama</td><td className="py-3 pr-4 text-gray-300">Local LLM Runtime</td><td className="py-3 pr-4 text-gray-300">On-premise deployment</td><td className="py-3 text-gray-300">Air-gapped systems</td></tr>
